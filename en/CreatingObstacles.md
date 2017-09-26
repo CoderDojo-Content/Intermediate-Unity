@@ -53,3 +53,12 @@
     }
     ```
     
+    Also remove these lines:
+    
+    ```csharp
+    spawnPosition.x = 0;
+    spawnPosition.y = 0;
+    spawnPosition.z = 0;
+    ```
+    
+    Finally, change `Vector3 spawnPosition;` to ` Vector3 spawnPosition = randomSpawn();`
