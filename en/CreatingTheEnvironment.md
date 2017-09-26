@@ -8,7 +8,8 @@
 5. Set the **Scale** of x and y on you "Background" **Quad** until it covers the entire Game Display. (Make sure it's set to the "Standalone" Aspect Ratio!) Awesome, you have a background!
 
 6. Now lets add something to control! Select the 3D object you chose earlier for you player and put it in the scene at position (0, 0, 0).
+CREATE COLLIDER
 
 7. To control the game with scripts without attaching them to a 3D object, "Empty Objects" can be used. Create an "Empty Object"(**GameObject>CreateEmpty**). Name this "Obstacles". Create another called "Projectiles".
 
-8. CREATE THE PREFABS
+8. Add the obstacle you made earlier at position (0, 0, 0). Change the scale until you are happy with the object. You need to add a rigidbody component to this object and uncheck the **Use Gravity** box in the **Inspector**. Also add a **Box Collider** (**Component>Physics>Box Collider**).
