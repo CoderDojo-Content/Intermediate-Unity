@@ -34,6 +34,18 @@
     Vector3 mousePos = Input.mousePosition;
     mousePos.z = 15f;
     mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-    // Make laser come from front of ship
+    // Make laser come from front of player
     mousePos.y += 1f;
     ```
+    We saw this code when we made the player move. (You might need to change the last line so your projectile comes from the right location.)
+    
+    Finally, replace
+    
+    ```csharp
+    GameObject projectileClone = Instantiate(projectile, pos, transform.rotation) as GameObject;
+    ```
+    with
+    ```csharp
+    GameObject projectileClone = Instantiate(projectile, mousePos, transform.rotation) as GameObject;
+    ```
+    
