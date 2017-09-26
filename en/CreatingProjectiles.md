@@ -1,0 +1,1 @@
+1. Now lets create something to destroy the obstacles.

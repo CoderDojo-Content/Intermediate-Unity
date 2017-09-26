@@ -1,6 +1,8 @@
 1. Create a new C# script in the "Scripts" folder named "Obstacles" and Attach it to the "Obstacles" **GameObject** you created earlier.
 
-2. Add this code to you "Obstacles" script and drag the obstacle you downloaded earlier and drop it into the "obstacle" box for your "obstacles" script in the **Inspector** for your "Obstacles" object.
+2. Create a new folder and name it "Prefabs". Add the obstacle you made earlier at position (0, 0, 0). Change the scale until you are happy with the object. Now drag the object from the **Hierarchy** and drop it into the "Prefabs" folder. 
+
+3. Add this code to you "Obstacles" script and drag the obstacle prefab you made and drop it into the "obstacle" box for your "obstacles" script in the **Inspector** for your "Obstacles" object.
 
   ```csharp
   public GameObject obstacle;
@@ -25,7 +27,7 @@
   
   To make your obstacles move at a constant velocity you change the **Rigidbody**'s **velocity** component.
   
-3. WOAH! That was a lot of obstacles spawning! When you're repeatedly spawning an obstacle, you want to be able to control how fast it spawns. To do that you can us a built in function! Add this to your code:
+4. WOAH! That was a lot of obstacles spawning! When you're repeatedly spawning an obstacle, you want to be able to control how fast it spawns. To do that you can us a built in function! Add this to your code:
 
     ```csharp
     public float spawnTime = 1f;
@@ -41,7 +43,7 @@
     Now change `Update()` to `spawnObstacle()`.
     (Change the spawnTime variable so that your obstacles don't hit each other!)
     
-4. Now your obstacles spawn at a reasonable speed, but they only spawn in the same location. Lets make it more fun by spawning them at different locations every spawn. You can make a function that returns a position to do this!
+5. Now your obstacles spawn at a reasonable speed, but they only spawn in the same location. Lets make it more fun by spawning them at different locations every spawn. You can make a function that returns a position to do this!
   
     ```csharp
     Vector3 randomSpawn()
