@@ -26,17 +26,24 @@
   To make your obstacles move at a constant velocity you change the **Rigidbody**'s **velocity** component.
   
 3. WOAH! That was a lot of obstacles spawning! When you're repeatedly spawning an obstacle, you want to be able to control how fast it spawns. to do do that you can us a built in function! Add this to your code:
+
     ```csharp
     public float spawnTime = 1f;
-
-
+    
     // Use this for initialization
     void Start()
     {
-        // 0f is when to start invoking repeat
-        InvokeRepeating("spawnObstacle", 0f, spawnTime);
+    // 0f is when to start invoking repeat
+    InvokeRepeating("spawnObstacle", 0f, spawnTime);
     }
     ```
+    
+    Now change `Update()` to `spawnObstacle`.
+    (Change the spawnTime variable so that your obstacles don't hit each other!)
+    
+4. Now your obstacles spawn at a reasonable speed, but they only spawn in the same location. Lets make it more fun by spawning them at different locations every spawn. You can make a function to do this!
   
-  
-  Now change **
+    ```csharp
+    
+    ```
+    
