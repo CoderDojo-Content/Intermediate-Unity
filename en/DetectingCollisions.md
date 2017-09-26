@@ -15,5 +15,5 @@
       }
     }
   ```
-  
+  **OnCollisionEnter()** is a built in function that is called when the object the script is attached to and another object collide. The if statement is to make sure that the projectile collided with an obstacle, then the two objects are destroyed.
   
