@@ -2,4 +2,25 @@
 
 2. Create a new C# script called "projectiles" (make sure its in the "Scripts" folder) and attach it to the empty "Projectiles" object you made earlier.
 
-3.  
+3.  Inside your "projectiles" script, replace the code inside your projectiles class with this code.
+
+```csharp
+public float projectileSpeed = 20f;
+public GameObject projectile;
+
+void Update(){
+  if (Input.GetMouseButtonDown(0);
+  {
+    Vector3 pos;
+    pos.x = 0;
+    pos.y = 0;
+    pos.z = 0;
+    // Create projectile clone
+    GameObject laserClone = Instantiate(laser, pos, transform.rotation) as GameObject; 
+    //Add a Rigidbody to the clone and move it
+    Rigidbody laserCloneRB = laserClone.GetComponent<Rigidbody>();
+    laserCloneRB.velocity = transform.up * laserSpeed;
+    // Destroy laser clone if alive too long
+    Destroy(laserClone, 2.5f);
+  }
+}
