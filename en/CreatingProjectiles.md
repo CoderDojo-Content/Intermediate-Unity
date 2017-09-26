@@ -1,4 +1,4 @@
-1. Now lets create something to destroy the obstacles. In game programming and physics a **projectile** is an object that is cast from one place to another. So, when a football player kicks the ball, in physics, the ball would become a projectile. Create your own projectile now in the scene (maybe a sphere or a rectangle) and add a rigidbody. Now make it into a prefab. (Remember to delete the old object from the scene!)
+1. Now lets create something to destroy the obstacles. In game programming and physics a **projectile** is an object that is cast from one place to another. So, when a football player kicks the ball, in physics, the ball would become a projectile. Create your own projectile now in the scene (maybe a sphere or a rectangle) and add a rigidbody (uncheck **Use Gravity). Now make it into a prefab. (Remember to delete the old object from the scene!)
 
 2. Create a new C# script called "projectiles" (make sure its in the "Scripts" folder) and attach it to the empty "Projectiles" object you made earlier.
 
