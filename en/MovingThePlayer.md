@@ -22,3 +22,11 @@
     spritePos.y = Mathf.Clamp(spritePos.y, 0.1f, 0.9f);
     transform.position = Camera.main.ViewportToWorldPoint(spritePos);
     ```
+    
+    The first line of code here gets the position of our "Player" object. You can then use the Mathf function Clamp to keep the "Player object within the camera's viewport. Clamp stops the position of the "Player" object coordinates on the x, y axis from exceeding the given values.
+    
+4. Now the "Player" object follows your cursor, but it would be nice to remove the cursor now! Adding this line of code into the **Start** function does that:
+
+```csharp
+    Cursor.visible = false;
+```
