@@ -25,7 +25,7 @@
     {
         if(col.gameObject.name == "obstacle(Clone)")
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
             Destroy(col.gameObject);
         }
     }
