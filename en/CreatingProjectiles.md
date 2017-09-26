@@ -9,7 +9,7 @@
     public GameObject projectile;
     
     void Update(){
-      if (Input.GetMouseButtonDown(0)
+      if (Input.GetMouseButtonDown(0))
       {
         Vector3 pos;
         pos.x = 0;
