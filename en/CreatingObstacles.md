@@ -49,7 +49,7 @@
         spawnPosition.z = 5;
         GameObject obstacleClone = Instantiate(obstacle, spawnPosition, obstacle.transform.rotation) as GameObject;
         // Move clones
-        Rigidbody obstacleCloneRB = asteroidClone.GetComponent<Rigidbody>();
+        Rigidbody obstacleCloneRB = obstacleClone.GetComponent<Rigidbody>();
         obstacleCloneRB.velocity = -(transform.up * obstacleSpeed);
         // Make sure clone is destroyed
         Destroy(obstacleClone, 10f);
