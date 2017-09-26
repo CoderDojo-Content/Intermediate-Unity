@@ -7,25 +7,20 @@
   public float spawnTime = .5f;
   public float obstacleSpeed = 2f;
    
-  // Use this for initialization
-  void Start()
-  {
-    // 0f is when to start invoking repeat
-    InvokeRepeating("spawnObstacle", 0f, spawnTime);
-  }
-   
-  void spawnObstacle()
+  void Update()
   {
     // Creating clones
     Vector3 spawnPosition;
     spawnPosition.x = 0;
     spawnPosition.y = 0;
     spawnPosition.z = 0;
-    GameObject asteroidClone = Instantiate(obstacle, spawnPosition, obstacle.transform.rotation) as GameObject;
+    GameObject obstacleClone = Instantiate(obstacle, spawnPosition, obstacle.transform.rotation) as GameObject;
     // Move clones
-    Rigidbody asteroidCloneRB = asteroidClone.GetComponent<Rigidbody>();
-    asteroidCloneRB.velocity = -(transform.up * asteroidSpeed);
+    Rigidbody obstacleCloneRB = obstacleClone.GetComponent<Rigidbody>();
+    obstacleCloneRB.velocity = -(transform.up * asteroidSpeed);
     // Make sure clone is destroyed
-    Destroy(asteroidClone, 10f);
+    Destroy(obstacleClone, 10f);
   }
   ```
+  
+  When you're repeatedly spawning an obstacle, you want to be able to control how fast it spawns. 
