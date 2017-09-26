@@ -18,4 +18,14 @@
   
   **OnCollisionEnter()** is a built in function that is called when the object the script is attached to and another object collide. The if statement is to make sure that the projectile collided with an obstacle, then the two objects are destroyed.
   
-3. Now you can detect a collision with an obstacle and the projectile, but not your "Player" object and an Obstacle.  
+3. Now you can detect a collision with an obstacle and the projectile, but not your "Player" object and an Obstacle. Add this code to your "Player" script
+
+    ```csharp
+    void OnCollisionEnter(Collision col)
+    {
+        if(col.gameObject.name == "obstacle(Clone)")
+        {
+            Destroy(this.gameObject);
+            Destroy(col.gameObject);
+        }
+    ```
