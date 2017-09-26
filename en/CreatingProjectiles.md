@@ -16,11 +16,11 @@ void Update(){
     pos.y = 0;
     pos.z = 0;
     // Create projectile clone
-    GameObject laserClone = Instantiate(laser, pos, transform.rotation) as GameObject; 
+    GameObject projectileClone = Instantiate(projectile, pos, transform.rotation) as GameObject; 
     //Add a Rigidbody to the clone and move it
-    Rigidbody laserCloneRB = laserClone.GetComponent<Rigidbody>();
-    laserCloneRB.velocity = transform.up * laserSpeed;
-    // Destroy laser clone if alive too long
-    Destroy(laserClone, 2.5f);
+    Rigidbody projectileCloneRB = projectileClone.GetComponent<Rigidbody>();
+    projectileCloneRB.velocity = transform.up * projectileSpeed;
+    // Destroy clone if alive too long
+    Destroy(projectileClone, 2.5f);
   }
 }
