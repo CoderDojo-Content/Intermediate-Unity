@@ -30,3 +30,6 @@
         }
     }
     ```
+    
+4. Now you have detected collisions between all of the objects in your game. The next Sushi Card will 
+    
