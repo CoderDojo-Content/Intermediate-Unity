@@ -1,6 +1,6 @@
 1. Create a new C# script in the "Scripts" folder named "Obstacles" and Attach it to the "Obstacles" **GameObject** you created earlier.
 
-2. Create a new folder and name it "Prefabs". Drag your obstacle from the **hierarchy** and drop it in the "Prefabs" folder.
+2. Create a new folder and name it "Prefabs". Drag your obstacle from the **hierarchy** and drop it in the "Prefabs" folder. Name this prefab "obstacle".
 
 3. Add this code to you "Obstacles" script and drag the obstacle prefab you made and drop it into the "obstacle" box for your "obstacles" script in the **Inspector** for your "Obstacles" object.
 
