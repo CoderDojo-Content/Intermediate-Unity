@@ -25,7 +25,7 @@
   
   To make your obstacles move at a constant velocity you change the **Rigidbody**'s **velocity** component.
   
-3. WOAH! That was a lot of obstacles spawning! When you're repeatedly spawning an obstacle, you want to be able to control how fast it spawns. to do do that you can us a built in function! Add this to your code:
+3. WOAH! That was a lot of obstacles spawning! When you're repeatedly spawning an obstacle, you want to be able to control how fast it spawns. To do that you can us a built in function! Add this to your code:
 
     ```csharp
     public float spawnTime = 1f;
