@@ -24,4 +24,32 @@
   ```
   To understand what's happening here you need to know what **instantiate** means. Instantiating something is creating a copy of a template. The template is the first object you pass into the **Instantiate()** function. In your case it is a **GameObject**!
   
-3. WOAH! That was a lot of obstacles spawning! When you're repeatedly spawning an obstacle, you want to be able to control how fast it spawns. to do do that you can us a built in function! 
+3. WOAH! That was a lot of obstacles spawning! When you're repeatedly spawning an obstacle, you want to be able to control how fast it spawns. to do do that you can us a built in function! Change your code to look like this:
+
+```csharp
+    public GameObject obstacle;
+    public float spawnTime = .5f;
+    public float obstacleSpeed = 2f;
+
+    // Use this for initialization
+    void Start()
+    {
+        // 0f is when to start invoking repeat
+        InvokeRepeating("spawnObstacle", 0f, spawnTime);
+    }
+
+    void spawnObstacle()
+    {
+        // Creating clones
+        Vector3 spawnPosition;
+        spawnPosition.x = 0;
+        spawnPosition.y = 0;
+        spawnPosition.z = 5;
+        GameObject obstacleClone = Instantiate(obstacleObject, spawnPosition, obstacle.transform.rotation) as GameObject;
+        // Move clones
+        Rigidbody obstacleCloneRB = asteroidClone.GetComponent<Rigidbody>();
+        obstacleCloneRB.velocity = -(transform.up * obstacleSpeed);
+        // Make sure clone is destroyed
+        Destroy(obstacleClone, 10f);
+    }
+```
