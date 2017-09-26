@@ -24,9 +24,11 @@
   ```
   To understand what's happening here you need to know what **instantiate** means. Instantiating something is creating a copy of a template. The template is the first object you pass into the **Instantiate()** function. In your case it is a **GameObject**!
   
+  To make your obstacles move at a constant velocity you change the **Rigidbody**'s **velocity** component.
+  
 3. WOAH! That was a lot of obstacles spawning! When you're repeatedly spawning an obstacle, you want to be able to control how fast it spawns. to do do that you can us a built in function! Change your code to look like this:
 
-```csharp
+    ```csharp
     public GameObject obstacle;
     public float spawnTime = .5f;
     public float obstacleSpeed = 2f;
@@ -52,4 +54,4 @@
         // Make sure clone is destroyed
         Destroy(obstacleClone, 10f);
     }
-```
+    ```
