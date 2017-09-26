@@ -28,4 +28,5 @@
             Destroy(this.gameObject);
             Destroy(col.gameObject);
         }
+    }
     ```
