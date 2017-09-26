@@ -1,6 +1,6 @@
 1. Create a new C# script in the "Scripts" folder named "Obstacles" and Attach it to the "Obstacles" **GameObject** you created earlier.
 
-2. Add this code to you "Obstacles" script and drag the obstacle you downloaded earlier and drop it into the "obstacle" box for your "obstacles" script in the **Inspector** for "Obstacles".
+2. Add this code to you "Obstacles" script and drag the obstacle you downloaded earlier and drop it into the "obstacle" box for your "obstacles" script in the **Inspector** for your "Obstacles" object.
 
   ```csharp
   public GameObject obstacle;
