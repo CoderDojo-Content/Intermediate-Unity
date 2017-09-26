@@ -2,7 +2,7 @@
 
 2. Add this code to the **Update()** function. 
     ```csharp
-    Vector3 mousePos = Input.mousePosition;  
+Vector3 mousePos = Input.mousePosition;  
     mousePos.z = 15f;
     this.transform.position = Camera.main.ScreenToWorldPoint(mousePos);
     ```
