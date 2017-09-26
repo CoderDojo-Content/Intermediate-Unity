@@ -27,6 +27,6 @@
     
 4. Now the "Player" object follows your cursor, but it would be nice to remove the cursor now! Adding this line of code into the **Start** function does that:
 
-```csharp
+    ```csharp
     Cursor.visible = false;
-```
+    ```
