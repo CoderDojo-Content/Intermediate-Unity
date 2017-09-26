@@ -2,7 +2,7 @@
 
 2. Create a new C# script called "projectile (make sure its in the "Scripts" folder) and attach it to the empty "Projectiles" object you made earlier.
 
-3.  Inside your "projectiles" script, replace the code inside your projectiles class with this code.
+3.  Inside your "projectile" script, replace the code inside your projectiles class with this code.
     
     ```csharp
     public float projectileSpeed = 20f;
