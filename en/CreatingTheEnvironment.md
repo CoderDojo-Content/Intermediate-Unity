@@ -10,3 +10,5 @@
 6. Now lets add something to control! Select the 3D object you chose earlier for you player and put it in the scene at position (0, 0, 0).
 
 7. To control the game with scripts without attaching them to a 3D object, "Empty Objects" can be used. Create an "Empty Object"(**GameObject>CreateEmpty**). Name this "Obstacles". Create another called "Projectiles".
+
+8. CREATE THE PREFABS
