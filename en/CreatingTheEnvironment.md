@@ -1,7 +1,7 @@
-1. set the **Transform** the "Main Camera" to (0, 0, -20)
+1. set the **Transform** the "Main Camera" to (0, 0, -15)
 
 2. Create a 3D Object **Quad** and rename it to "Background"
-3. Set the **Transform** of the "Background" Object to (0, 0, 6).
+3. Set the **Transform** of the "Background" Object to (0, 0, 1).
 
 4. Drag the background image you chose earlier from the "Materials" folder in the **Project Viewer** and drop it on the Background object in the **Hierarchy**. 
 

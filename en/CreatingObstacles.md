@@ -38,12 +38,18 @@
     }
     ```
     
-    Now change `Update()` to `spawnObstacle`.
+    Now change `Update()` to `spawnObstacle()`.
     (Change the spawnTime variable so that your obstacles don't hit each other!)
     
-4. Now your obstacles spawn at a reasonable speed, but they only spawn in the same location. Lets make it more fun by spawning them at different locations every spawn. You can make a function to do this!
+4. Now your obstacles spawn at a reasonable speed, but they only spawn in the same location. Lets make it more fun by spawning them at different locations every spawn. You can make a function that returns a position to do this!
   
     ```csharp
-    
+    Vector3 randomSpawn()
+    {
+        float xPos = Random.Range(.5f, 9.5f);
+        xPos = xPos / 10f;
+        Vector3 spawnPosition = Camera.main.ViewportToWorldPoint(new Vector3(xPos, 1.1f, 15f));
+        return spawnPosition;
+    }
     ```
     
