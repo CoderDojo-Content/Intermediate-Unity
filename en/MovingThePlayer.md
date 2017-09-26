@@ -3,6 +3,7 @@
 2. Add this code to the **Update()** function. 
     ```csharp
 Vector3 mousePos = Input.mousePosition;  
+
     mousePos.z = 15f;
     this.transform.position = Camera.main.ScreenToWorldPoint(mousePos);
     ```
@@ -14,4 +15,11 @@ Vector3 mousePos = Input.mousePosition;
      
      The last line moves our "player" object to the position of our mouse! "this" is a keyword that refers to the object the script is attached to. **transform.position** changes the location of the "this" (or your "Player") object. **Camera.main.ScreenToWorldPoint(mousePos)** sets the position of your "Player" object in the game world space.
      
-3.  
+3.  If you ran the game, did you notice that the "Player" object doesn't stay on the screen? You can fix this by adding this bit of code underneath the code you added in step 2!
+
+```csharp
+        Vector3 spritePos = Camera.main.WorldToViewportPoint(transform.position);
+        spritePos.x = Mathf.Clamp(spritePos.x, 0.05f, 0.95f);
+        spritePos.y = Mathf.Clamp(spritePos.y, 0.1f, 0.9f);
+        transform.position = Camera.main.ViewportToWorldPoint(spritePos);
+```
