@@ -31,5 +31,5 @@
     }
     ```
     
-4. Now you have detected collisions between all of the objects in your game. The next Sushi Card will 
+4. Now you have detected collisions between all of the objects in your game. You might have noticed a bug after the player is destroyed! If you have the time after you finish you can try to fix the bug!
     
