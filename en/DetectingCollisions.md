@@ -7,7 +7,7 @@
   {
     public void OnCollisionEnter(Collision col)
     {
-      if (col.gameObject.name == "Asteroid(Clone)")
+      if (col.gameObject.name == "obstacle(Clone)")
       {
         // Destroy both objects
         Destroy(col.gameObject);
