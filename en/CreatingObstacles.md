@@ -1,6 +1,6 @@
 1. Create a new C# script in the "Scripts" folder named "Obstacles" and Attach it to the "Obstacles" **GameObject** you created earlier.
 
-2. Create a new folder and name it "Prefabs". Add the obstacle you made earlier at position (0, 0, 0). Change the scale until you are happy with the object. Now drag the object from the **Hierarchy** and drop it into the "Prefabs" folder. 
+2. Create a new folder and name it "Prefabs". Add the obstacle you made earlier at position (0, 0, 0). Change the scale until you are happy with the object. You need to add a rigidbody component to this object and uncheck the **Use Gravity** box in the **Inspector**. Now drag the object from the **Hierarchy** and drop it into the "Prefabs" folder. 
 
 3. Add this code to you "Obstacles" script and drag the obstacle prefab you made and drop it into the "obstacle" box for your "obstacles" script in the **Inspector** for your "Obstacles" object.
 
