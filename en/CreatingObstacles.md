@@ -23,7 +23,7 @@
     Destroy(obstacleClone, 10f);
   }
   ```
-  To understand what's happening here you need to know what **instantiate** means. Instantiating something is creating a copy of a template. The template is the first object you pass into the **Instantiate()** function. In your case it is a **GameObject**!
+  To understand what's happening here you need to know what **instantiate** means. Instantiating something is creating a copy of a template. The template is the first object you pass into the **Instantiate()** function. In your case it is a **GameObject**! However, when you instantiate an object you must **Destroy()** it or your computer will slow down! The last line of this code destroys the instantiated object after 10 seconds.
   
   To make your obstacles move at a constant velocity you change the **Rigidbody**'s **velocity** component.
   
