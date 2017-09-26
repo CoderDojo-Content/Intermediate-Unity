@@ -4,7 +4,6 @@
 
   ```csharp
   public GameObject obstacle;
-  public float spawnTime = .5f;
   public float obstacleSpeed = 2f;
    
   void Update()
@@ -30,7 +29,7 @@
 
     ```csharp
     public GameObject obstacle;
-    public float spawnTime = .5f;
+    public float spawnTime = 1f;
     public float obstacleSpeed = 2f;
 
     // Use this for initialization
