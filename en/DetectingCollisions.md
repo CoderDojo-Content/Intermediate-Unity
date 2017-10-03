@@ -16,7 +16,7 @@
   
   **OnCollisionEnter()** is a built in function that is called when the object the script is attached to and another object collide. **col.gameobject.name** returns the name of the object the laser collided with. The if statement is to make sure that the laser collided with an asteroid (which will be called Asteroid(Clone)), then the two objects will be destroyed. 
   
-3. Since you're destroying asteroids, you should make it play a sound! Create a **AudioSource** (**GameObject > Audio > AudioSource**) and call it "DestroyAsteroidSound". Open up the "Audio" Assets folder and drag and drop the sound into the "DestroyAsteroidSound" **Inspector** for "Audio Clip".
+3. Since you're destroying asteroids, you should make it play a sound! Create a **AudioSource** (**GameObject > Audio > AudioSource**) and call it "DestroyAsteroidSound". Open up the "Audio" Assets folder and drag and drop the sound into the "DestroyAsteroidSound" **Inspector** for "Audio Clip". Finally, uncheck the "Play On Awake" property. 
 
 4. To play the **AudioSource** some code needs to be added into the if statement you made in the last step.
 
@@ -24,7 +24,9 @@
     AudioSource audio = GameObject.Find("DestroyAsteroidSound").GetComponent<AudioSource>();
     audio.Play();
     ```
-
+    
+    This code finds the game object you made with the first line. The second line plays the sound that you added to the **AudioSource**.
+    
 5. Now you can detect a collision with an asteroid and the laser, but not your "Player" object and an asteroid. Add this code to your "Player" script
 
     ```csharp
