@@ -51,12 +51,15 @@
  ``` 
  
  To make the player win, we can add an if statement in the **Update()** function that checks if the score is equal a number. When the player reaches that number they will win! Add this if statement.
- 
- ```csharp
- if (score = 10)
- {
-     endgame("You Win!");
- }
- ```
+
+    ```csharp
+    if (score = 10)
+    {
+        endgame("You Win!");
+    }
+    ```
+Change 10 to whatever number you want the player to get to so that they win.
+
+Your player can now win and lose, and they will get a message when they do!
     
     
