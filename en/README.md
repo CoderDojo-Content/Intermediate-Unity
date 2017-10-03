@@ -1,11 +1,5 @@
-1. Create a new Unity Project and add a "Materials" folder to that project.
+1. Download this Unity Project with all of the assets you need to make a game! (final package of game assets). You wont need to make your own new Unity Project, because this creates a project for you!
 
-2. Open up the Unity Asset Store (**Window > Asset Store**) and click on "Filters" (on the right of the search bar). Now click "FREE ONLY".
-![](/assets/AssetStoreClickFree.PNG)    
-
-3. Use the search bar to find a 3D object to be your player. We use a *SPACESHIP* [dojo.soy/spaceship](https://www.assetstore.unity3d.com/en/#!/content/73167) *(change to whatever asset we use)*, but you can use whatever model you want to! To Download your new asset click the "Download" button. An import box will pop up, click the "Import" button. You will now have a "Player" object for your game!
-
-4. Find a 3D object to be an obstacle and download it like you did in the last step. This can be an enemy vehicle, a rock, or an asteroid! The choice is up to you and the game you want to create! Put 
-this object in your games Materials folder.
-
-5. Find a Texture to be your game's background. We used ... (ADD ASSET). This can also be an image from google! (Make sure to put it in your game's "Materials" folder)
+3. You can also find assets on the Unity Asset Store! In the Unity go (**Window > Asset Store**) and click on "Filters" (on the right of the search bar). Now click "FREE ONLY".
+![](/assets/AssetStoreClickFree.PNG).
+You can use these assets to change what your game looks like!
