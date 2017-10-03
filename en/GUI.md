@@ -1,4 +1,4 @@
-1. The graphical User Interface (GUI) is how your game can display information to the player. You're going to add a menu and a score to your game.
+1. The graphical User Interface (GUI) is how your game can display information to the player. You're going to add a score to your game and make the player win or lose.
 
 2. Create an **UI Text** element (**GameObject > UI > Text**) and rename it "Score". In the "Score" **Inspector** there is a text box in the **Text Script** property. Change the text to "Score: 0".
 
