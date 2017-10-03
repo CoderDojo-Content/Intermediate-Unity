@@ -39,7 +39,7 @@
     ```
     We saw this code when we made the player move. (You might need to change the last line so your laser comes from the right location.)
     
-    Finally, replace
+    Finally, replace the "pos" in the **Instantiate()** function with "mousePos"
     
     ```csharp
     GameObject laserClone = Instantiate(laser, pos, transform.rotation) as GameObject;
