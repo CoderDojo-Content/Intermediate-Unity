@@ -30,7 +30,33 @@
     
     **Player.score** is how you access the static variable you made in the Player class. it means from the "Player" class get the "score" variable. **Score.text** is the text that is displayed to the screen for the players score. **ToString()** just converts the score which is a number into a string so it can be displayed. 
     
-7. Add a new **UI Text** element to your canvas.
+7. Add a new **UI Text** element to your canvas and call it "winOrLose". Make the text style match your score's text style, then remove all the text from the text box. 
+
+8. Now you are going to update the "Player" script so that it updates the "winOrLose" text based on the player losing or winning your game. Since the code will be the same for losing and winning you can create a function so that you don't have duplicate code. Put this function in your "Player" script.
+
+```csharp
+    void endGame(string text)
+    {
+        Text endgameText = GameObject.Find("endgameText").GetComponent<Text>();
+        endgameText.text = text;
+        Time.timeScale = 0;
+    }
+```
+    This function requires a parameter or the variable declaration in the parenthesis after the function. This way you can display any text when the function is called. **Time.timeScale** is the speed the game is running at... setting it to 0 stops time in the game.
     
+9. The last step to have your player win or lose is calling the function you just added. When the player loses is when they collide with an asteroid, so you should call the "endGame()" function in the **OnCollisionEnter()** function.
+
+ ```csharp
+ endgame("GAME OVER");
+ ``` 
+ 
+ To make the player win, we can add an if statement in the **Update()** function that checks if the score is equal a number. When the player reaches that number they will win! Add this if statement.
+ 
+ ```csharp
+ if (score = 10)
+ {
+     endgame("You Win!");
+ }
+ ```
     
     
