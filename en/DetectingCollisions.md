@@ -16,7 +16,7 @@
   
   **OnCollisionEnter()** is a built in function that is called when the object the script is attached to and another object collide. **col.gameobject.name** returns the name of the object the laser collided with. The if statement is to make sure that the laser collided with an asteroid (which will be called Asteroid(Clone)), then the two objects will be destroyed. 
   
-3. Since you're destroying asteroids, you should make it play a sound! Create a **AudioSource** (**GameObject > Audio > AudioSource**) and call it "DestroyAsteroidSound". Open up the "Audio" Assets folder and drag and drop the sound into the "DestroyAsteroidSound" **Inspector** for "Audio Clip". Finally, uncheck the "Play On Awake" property. 
+3. Since you're destroying asteroids, you should make it play a sound! Create an **Empty** (**GameObject > Create Empty**) and call it "DestroyAsteroidSound". Add an **AudioSource** component to the Empty. Open up the "Audio" Assets folder and drag and drop the "explosion_asteroid" sound into the "DestroyAsteroidSound" **Inspector** for "Audio Clip". Finally, uncheck the "Play On Awake" property. 
 
 4. To play the **AudioSource** some code needs to be added into the if statement you made in the last step.
 
@@ -40,6 +40,8 @@
     }
     ```
     
-6. Now you have detected collisions between all of the objects in your game. You might have noticed a bug after the player is destroyed! If you have the time after you finish you can try to fix the bug!
+6. Lets play a different noise if the player collides with an asteroid. Create another *AudioSource** and call it "DestroyPlayerSound". Add the "explosion_player"  
+   
+7. You have detected collisions between all of the objects in your game. You might have noticed a bug after the player is destroyed! If you have the time after you finish you can try to fix the bug!
 
     
