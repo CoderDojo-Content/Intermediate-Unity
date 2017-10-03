@@ -12,6 +12,4 @@
 (Picture)
 Click "Add Layer...". In the first open layer type "Background" and go back to the "Directional Light" **Inspector**. Click the **Culling Mask** drop down menu and select "Everything". Now deselect the "Background" in the **Culling Mask**. The **Culling Mask** will now say "Mixed...". Go to your "Background" object's **Inspector** and select the layer drop down menu and set it to the "Background" layer you just created. There will be no more shadow!
 
-7. To control the game with scripts without attaching them to a 3D object, "Empty Objects" can be used. Create an "Empty Object"(**GameObject > CreateEmpty**). Name this "Obstacles". Create another called "Projectiles".
-
-8. Add the obstacle you downloaded at any position in the scene. Change the scale until you are happy with the object. You need to add a rigidbody component to this object and uncheck the **Use Gravity** box in the **Inspector**. Add a **Box Collider** to this obstacle and make the box bigger than the "Obstacle" object.  
+7. To control the game with scripts without attaching them to a 3D object, "Empty Objects" can be used. Create an "Empty Object"(**GameObject > CreateEmpty**). Name this "Asteroid". Create another called "Lasers". 

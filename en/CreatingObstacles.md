@@ -1,12 +1,10 @@
-1. Create a new C# script in the "Scripts" folder named "Obstacles" and Attach it to the "Obstacles" **GameObject** you created earlier.
+1. Create a new C# script in the "Scripts" folder named "Asteroids" and Attach it to the "Ateroids" **GameObject** you created earlier.
 
-2. Create a new folder and name it "Prefabs". Drag your obstacle from the **hierarchy** and drop it in the "Prefabs" folder. Name this prefab "obstacle".
-
-3. Add this code to you "Obstacles" script and drag the obstacle prefab you made and drop it into the "obstacle" box for your "obstacles" script in the **Inspector** for your "Obstacles" object.
+2. Add this code to you "Asteroids" script:
 
   ```csharp
-  public GameObject obstacle;
-  public float obstacleSpeed = 2f;
+  public GameObject asteroid;
+  public float asteroidSpeed = 2f;
    
   void Update()
   {
@@ -15,19 +13,20 @@
     spawnPosition.x = 0;
     spawnPosition.y = 0;
     spawnPosition.z = 0;
-    GameObject obstacleClone = Instantiate(obstacle, spawnPosition, obstacle.transform.rotation) as GameObject;
+    GameObject asteroidClone = Instantiate(asteroid, spawnPosition, asteroid.transform.rotation) as GameObject;
     // Move clones
-    Rigidbody obstacleCloneRB = obstacleClone.GetComponent<Rigidbody>();
-    obstacleCloneRB.velocity = -(transform.up * obstacleSpeed);
+    Rigidbody asteroidCloneRB = asteroidClone.GetComponent<Rigidbody>();
+    asteroidCloneRB.velocity = -(transform.up * asteroidSpeed);
     // Make sure clone is destroyed
-    Destroy(obstacleClone, 10f);
+    Destroy(AsteroidClone, 10f);
   }
   ```
-  To understand what's happening here you need to know what **instantiate** means. Instantiating something is creating a copy of a template. The template is the first object you pass into the **Instantiate()** function. In your case it is a **GameObject**! However, when you instantiate an object you must **Destroy()** it or your computer will slow down! The last line of this code destroys the instantiated object after 10 seconds.
   
-  To make your obstacles move at a constant velocity you change the **Rigidbody**'s **velocity** component.
+  To understand what's happening here you need to know what **instantiate** means. Instantiating something is creating a copy of a template. The template is the first object you pass into the **Instantiate()** function. In your case it is a **GameObject**! However, when you instantiate an object you must **Destroy()** it or your computer will slow down! The last line of this code destroys the instantiated object after 10 seconds. To make your asteroids move at a constant velocity you change the **Rigidbody**'s **velocity** property.
   
-4. WOAH! That was a lot of obstacles spawning! When you're repeatedly spawning an obstacle, you want to be able to control how fast it spawns. To do that you can us a built in function! Add this to your code:
+  Drag the Asteroid prefab you made and drop it into the "asteroid" box for your "asteroids" script in the **Inspector** for your "Asteroids" object. Try running your game.
+  
+4. WOAH! That was a lot of asteroids spawning! When you're repeatedly spawning an asteroid, you want to be able to control how fast it spawns. To do that you can use Unity's built in function **InvokeRepeating**! Add this to your code above **Update()**.
 
     ```csharp
     public float spawnTime = 1f;
@@ -36,14 +35,13 @@
     void Start()
     {
     // 0f is when to start invoking repeat
-    InvokeRepeating("spawnObstacle", 0f, spawnTime);
+    InvokeRepeating("spawnAsteroid", 0f, spawnTime);
     }
     ```
     
-    Now change `Update()` to `spawnObstacle()`.
-    (Change the spawnTime variable so that your obstacles don't hit each other!)
+    Now change `Update()` to `spawnAsteroid()`.
     
-5. Now your obstacles spawn at a reasonable speed, but they only spawn in the same location. Lets make it more fun by spawning them at different locations every spawn. You can make a function that returns a position to do this!
+5. Now your asteroids spawn at a reasonable speed, but they only spawn in the same location. Lets make it more fun by spawning them at different locations every spawn. You can make a function that returns a random position to do this!
   
     ```csharp
     Vector3 randomSpawn()
@@ -63,4 +61,6 @@
     spawnPosition.z = 0;
     ```
     
-    Finally, change `Vector3 spawnPosition;` to ` Vector3 spawnPosition = randomSpawn();`
+    Finally, change `Vector3 spawnPosition;` to ` Vector3 spawnPosition = randomSpawn();`. 
+    
+    Putting **Vector3** instead of **void** in front of a function declaration means that the function well return a **Vector3** object. **Random.Range()** returns a random number between the two numbers given in the parameters. That number is then divided by 10 so that we get a number between 1 and 0, or the camera's viewport dimensions. You then create a **Vector3** to return called "spawnPosition". and set the "spawnPosition" to (our randomly generated x position, a y position that is off the screen, the z position that is level with your player object).
