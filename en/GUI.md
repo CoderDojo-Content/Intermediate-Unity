@@ -7,4 +7,4 @@
 4. If you check the Game View you will be able to see there the score will be displayed. It's in the center, but you can move it to a better spot. Use the text element's **Rect Transform** in the **Inspector** to move the score into the corner of the screen.
 (**_picture_**)
 
-5. Now that you have a place to display the score, you need to update the score. You want to update the score when a laser destroys an asteroid.
+5. Now that you have a place to display the score, you need to update the score. You want to update the score when a laser collides an asteroid. The code that detects that collision is in the "LaserClone" script. 
