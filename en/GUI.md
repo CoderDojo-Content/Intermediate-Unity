@@ -1,6 +1,6 @@
 1. The graphical User Interface (GUI) is how your game can display information to the player. You're going to add a score to your game and make the player win or lose.
 
-2. Create an **UI Text** element (**GameObject > UI > Text**) and rename it "Score". In the "Score" **Inspector** there is a text box in the **Text Script** property. Change the text to "Score: 0".
+2. Create an **UI Text** element (**GameObject > UI > Text**) and rename it "Score". In the "Score" **Inspector** there is a text box in the **Text Script** property. Change the text to "Score: 0". This also added an object to your hierarchy called a **Canvas**, this is where all of your GUI elements will be displayed.
 
 3. Play around with the properties in the **Text Script**. Make sure you change the color to something that will show up on your background (white works well) and set the **Font Size** to 27.
 
@@ -29,6 +29,8 @@
     ```
     
     **Player.score** is how you access the static variable you made in the Player class. it means from the "Player" class get the "score" variable. **Score.text** is the text that is displayed to the screen for the players score. **ToString()** just converts the score which is a number into a string so it can be displayed. 
+    
+7. Add a new **UI Text** element to your canvas.
     
     
     
