@@ -8,6 +8,4 @@
 * [Detecting Collisions](DetectingCollisions.md)
 * [GUI](GUI.md)
 * [Sound](Sound.md)
-* [Winning & Losing](WinningLosing.md)
-
 
