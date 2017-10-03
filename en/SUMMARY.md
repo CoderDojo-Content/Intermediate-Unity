@@ -7,5 +7,5 @@
 * [Creating Projectiles](CreatingProjectiles.md)
 * [Detecting Collisions](DetectingCollisions.md)
 * [GUI](GUI.md)
-* [Sound](Sound.md)
+* [Create a .exe](CreateExe.md)
 

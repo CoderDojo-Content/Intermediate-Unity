@@ -49,3 +49,4 @@
     GameObject laserClone = Instantiate(laser, mousePos, transform.rotation) as GameObject;
     ```
     
+5. Lasers make sounds! lets add a sound to this laser. Click on the laser in the "Prefabs" folder and add an "AudioSource" component (**Component > Audio > Audio Source**). From the "Audio" folder drag "laser_Sound" into the **Audio Clip** property in the "Laser" prefab **Inspector**.
