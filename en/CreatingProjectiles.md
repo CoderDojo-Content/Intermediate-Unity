@@ -1,4 +1,4 @@
-1. Now lets create something to destroy the obstacles. In game programming and physics a **projectile** is an object that is cast from one place to another. So, when a football player kicks the ball, in physics, the ball would become a projectile.
+1. Now lets create something to destroy the obstacles. In game programming and physics a **projectile** is an object that is cast from one place to another. So, when a football/Soccer player kicks the ball, in physics, the ball would become a projectile.
 
 2. Create a new C# script called "lasers" (make sure its in the "Scripts" folder) and attach it to the empty "Lasers" object you made earlier.
 
