@@ -40,7 +40,12 @@
     }
     ```
     
-6. Lets play a different noise if the player collides with an asteroid. Create another *AudioSource** and call it "DestroyPlayerSound". Add the "explosion_player"  
+6. Lets play a different noise if the player collides with an asteroid. Create another **Empty** and call it "DestroyPlayerSound". Add an**AudioSource** and add the "explosion_player" sound to it. Finally, add this code to the **OnCollisionEnter()** function in the "Player" script.
+
+    ```csharp
+    AudioSource audio = GameObject.Find("DestroyPlayerSound").GetComponent<AudioSource>();
+    audio.Play();
+    ```
    
 7. You have detected collisions between all of the objects in your game. You might have noticed a bug after the player is destroyed! If you have the time after you finish you can try to fix the bug!
 
