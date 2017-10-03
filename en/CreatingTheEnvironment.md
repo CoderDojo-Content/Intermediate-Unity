@@ -8,7 +8,9 @@
 
 5. Now lets add something to control! From the "Prefabs" folder drag and drop the "Player" object onto your scene view. Set the **Transform** position to (0, 0, 0)
 
-6. 
+6. Did you notice that the spaceship has a shadow? It doesn't look very good so, you can get rid of it. To select which objects the "Directional Light" applies to you use the **Culling Mask** property of the light and layers. In the "Directional Light" **Inspector** click the "Layers" drop down on the top right.
+(Picture)
+Click "Add Layer..." 
 
 7. To control the game with scripts without attaching them to a 3D object, "Empty Objects" can be used. Create an "Empty Object"(**GameObject > CreateEmpty**). Name this "Obstacles". Create another called "Projectiles".
 
