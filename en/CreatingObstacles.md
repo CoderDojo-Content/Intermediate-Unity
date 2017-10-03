@@ -39,7 +39,7 @@
     }
     ```
     
-    Now change `Update()` to `spawnAsteroid()`.
+    Now change `Update()` to `spawnAsteroid()` and put the "asteroid" prefab into the the script's "asteroid" slot in the "Asteroids" object **Inspector**.
     
 5. Now your asteroids spawn at a reasonable speed, but they only spawn in the same location. Lets make it more fun by spawning them at different locations every spawn. You can make a function that returns a random position to do this!
   
@@ -52,8 +52,9 @@
         return spawnPosition;
     }
     ```
+    Putting **Vector3** instead of **void** in front of a function declaration means that the function well return a **Vector3** object. **Random.Range()** returns a random number between the two numbers given in the parameters. That number is then divided by 10 so that we get a number between 1 and 0, or the camera's viewport dimensions. You then create a **Vector3** to return called "spawnPosition". and set the "spawnPosition" to (our randomly generated x position, a y position that is off the screen, the z position that is level with your player object).
     
-    Also remove these lines:
+   Remove these lines:
     
     ```csharp
     spawnPosition.x = 0;
@@ -62,5 +63,3 @@
     ```
     
     Finally, change `Vector3 spawnPosition;` to ` Vector3 spawnPosition = randomSpawn();`. 
-    
-    Putting **Vector3** instead of **void** in front of a function declaration means that the function well return a **Vector3** object. **Random.Range()** returns a random number between the two numbers given in the parameters. That number is then divided by 10 so that we get a number between 1 and 0, or the camera's viewport dimensions. You then create a **Vector3** to return called "spawnPosition". and set the "spawnPosition" to (our randomly generated x position, a y position that is off the screen, the z position that is level with your player object).
