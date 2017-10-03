@@ -13,3 +13,5 @@
 7. A window should pop-up with some settings. Make sure the resolution is the same as the resolution you used in your **Game View** in Unity. Also make sure windowed is checked!
 
 8. Click **Play!**
+
+9. All you need is to send people your .exe file and the _Data folder and they can play your new game!
