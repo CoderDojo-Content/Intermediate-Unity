@@ -34,14 +34,14 @@
 
 8. Now you are going to update the "Player" script so that it updates the "winOrLose" text based on the player losing or winning your game. Since the code will be the same for losing and winning you can create a function so that you don't have duplicate code. Put this function in your "Player" script.
 
-```csharp
+    ```csharp
     void endGame(string text)
     {
         Text endgameText = GameObject.Find("endgameText").GetComponent<Text>();
         endgameText.text = text;
         Time.timeScale = 0;
     }
-```
+    ```
     This function requires a parameter or the variable declaration in the parenthesis after the function. This way you can display any text when the function is called. **Time.timeScale** is the speed the game is running at... setting it to 0 stops time in the game.
     
 9. The last step to have your player win or lose is calling the function you just added. When the player loses is when they collide with an asteroid, so you should call the "endGame()" function in the **OnCollisionEnter()** function.
