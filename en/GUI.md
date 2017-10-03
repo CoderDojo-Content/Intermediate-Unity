@@ -9,7 +9,7 @@
 
 5. Now that you have a place to display the score, you need to update the score. You want to update the score when a laser collides an asteroid. The code that detects that collision is in the "laserClone" script. However, we need a variable to keep track of the player's score. The score can't be put in the laserClone script because it is destroyed every time the laser it is attached to is destroyed. You will need to use the **static variable**.
 
-   A **static variable** is used to store a variable across all instances of a class. This means you can use the variable by referencing a class.
+   A **static variable** is used to store a variable across all instances of a class. This means you can use the variable by referencing a class. This can even be referenced from other classes.
    Add  to the "Player" script. 
    
    ```csharp
@@ -25,8 +25,10 @@
     ```csharp
     Text Score = GameObject.Find("Text").GetComponent<Text>();
     Player.score = Player.score + 1;
-    Score.text = "Score: " + PlayerMover.score.ToString();
+    Score.text = "Score: " + Player.score.ToString();
     ```
+    
+    **Player.score** is how you access the static variable you made in the Player class. it means from the "Player" class get the "score" variable. **
     
     
     
