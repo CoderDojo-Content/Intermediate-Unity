@@ -28,7 +28,7 @@
     Score.text = "Score: " + Player.score.ToString();
     ```
     
-    **Player.score** is how you access the static variable you made in the Player class. it means from the "Player" class get the "score" variable. **
+    **Player.score** is how you access the static variable you made in the Player class. it means from the "Player" class get the "score" variable. **Score.text** is the text that is displayed to the screen for the players score. **ToString()** just converts the score which is a number into a string so it can be displayed. 
     
     
     
