@@ -1,4 +1,4 @@
-1. Set the **Transform** of the "Main Camera" position to (0, 0, -15) and set the **Transform** of the "Directional Light" position to (0, 0, -15).
+1. Camera's are important in Unity. The camera displays what the player of your game sees. Light's in Unity do exactly what they do in real life. You can move lights around to see objects better. Set the **Transform** of the "Main Camera" position to (0, 0, -15) and set the **Transform** of the "Directional Light" position to (0, 0, -15).
 
 2. Create a 3D Object **Quad** and rename it to "Background" and set the **Transform** position to (0, 0, 1).
 

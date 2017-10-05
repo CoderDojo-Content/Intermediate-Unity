@@ -12,9 +12,11 @@
     
      Notice **Input.mousePosition** doesn't change the **Vector3**'s position on the z-axis. You can set the z value by using "**.**" (called the "Dot Operator"). This allows us to access the variables within the **Vector3** structure.
      
-     The last line moves our "player" object to the position of our mouse!  **transform.position** changes the location of your "Player" object. **Camera.main.ScreenToWorldPoint(mousePos)** sets the position of your "Player" object in the game world space.
+     The last line moves our "player" object to the position of our mouse!  **transform.position** changes the location of your "Player" object. `Camera.main.ScreenToWorldPoint(mousePos)` sets the position of your "Player" object in the game world space.
      
-3.  If you ran the game, did you notice that the "Player" object doesn't stay on the screen? You can fix this by adding this bit of code underneath the code you added in step 2!
+     Now try to run your game! What is something that you might want to change about where the "player" object goes?
+     
+3.  Did you notice that the "Player" object doesn't stay on the screen? You can fix this by adding this bit of code underneath the code you added in step 2!
     
     ```csharp
     Vector3 spritePos = Camera.main.WorldToViewportPoint(transform.position);
