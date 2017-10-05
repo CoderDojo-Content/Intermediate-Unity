@@ -14,4 +14,4 @@
 
 8. Click **Play!**
 
-9. All you need is to give your friends the .exe file and the \_Data folder and they can play your new game! (Our file and folder were called "UnityIntermediateSushi.ex" and UnityIntermediateSushi_Data)
+9. All you need is to give your friends the .exe file and the \_Data folder and they can play your new game! (Our file and folder were called "UnityIntermediateSushi.exe" and UnityIntermediateSushi_Data)
