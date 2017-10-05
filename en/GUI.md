@@ -32,7 +32,7 @@
     
     **Player.score** is how you access the static variable you made in the Player class. it means from the "Player" class get the "score" variable. **Score.text** is the text that is displayed to the screen for the players score. **ToString()** just converts the score which is a number into a string so it can be displayed. 
     
-7. Add a new **UI Text** element to your canvas and call it "winOrLose". Make the text style match your score's text style, then remove all the text from the text box. 
+7. Add a new **UI Text** element to your canvas and call it "winOrLose". Make the text style match your score's text style, then remove all the text from the text box. Change the width of the **Rect Transform** to 200.
 
 8. Now you are going to update the "Player" script so that it updates the "winOrLose" text based on the player losing or winning your game. Since the code will be the same for losing and winning you can create a function so that you don't have duplicate code. Put this function in your "Player" script.
 
