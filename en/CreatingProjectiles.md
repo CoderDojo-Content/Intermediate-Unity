@@ -1,4 +1,4 @@
-1. Now lets create something to destroy the asteroids. In game programming and physics a **projectile** is an object that is cast from one place to another. So, when a football/Soccer player kicks the ball, in physics, the ball would become a projectile once it starts moving.
+1. Now lets create something to destroy the asteroids. In game programming and physics a **projectile** is an object that is cast (thrown, fired, moved) from one place to another. So, when a football player kicks the ball, in physics, the ball would become a projectile once it starts moving.
 
 2. Create a new C# script called "lasers" (make sure its in the "Scripts" folder) and attach it to the empty "Lasers" object you made earlier.
 
@@ -48,6 +48,8 @@
     ```csharp
     GameObject laserClone = Instantiate(laser, mousePos, transform.rotation) as GameObject;
     ```
+    You might have not seen this operator before `mousePos.y += 1f;
+` coders are pretty lazy, and using these "shorthand" operators allow us to shorten code. `a += b` is the same as ` a = a + b`, but notice how much shorter the first one is!
     
 5. Lasers make sounds! lets add a sound to this laser. Click on the laser in the "Prefabs" folder and add an "AudioSource" component (**Component > Audio > Audio Source**). From the "Audio" folder drag "laser_Sound" into the **Audio Clip** property in the "Laser" prefab **Inspector**.
 
