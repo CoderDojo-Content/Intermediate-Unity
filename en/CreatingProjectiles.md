@@ -37,7 +37,9 @@
     // Make laser come from front of player
     mousePos.y += 1f;
     ```
-    We saw this code when we made the player move. (You might need to change the last line so your laser comes from the right location.)
+    We saw this code when we made the player move. However, you might have not seen this operator before `mousePos.y += 1f;
+` coders are pretty lazy, and using these "shorthand" operators allow us to shorten code. `a += b` is the same as ` a = a + b`, but notice how much shorter the first one is!
+
     
     Finally, replace the "pos" in the **Instantiate()** function with "mousePos"
     
@@ -48,8 +50,6 @@
     ```csharp
     GameObject laserClone = Instantiate(laser, mousePos, transform.rotation) as GameObject;
     ```
-    You might have not seen this operator before `mousePos.y += 1f;
-` coders are pretty lazy, and using these "shorthand" operators allow us to shorten code. `a += b` is the same as ` a = a + b`, but notice how much shorter the first one is!
     
 5. Lasers make sounds! lets add a sound to this laser. Click on the laser in the "Prefabs" folder and add an "AudioSource" component (**Component > Audio > Audio Source**). From the "Audio" folder drag "laser_Sound" into the **Audio Clip** property in the "Laser" prefab **Inspector**.
 
