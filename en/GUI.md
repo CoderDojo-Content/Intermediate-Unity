@@ -6,7 +6,7 @@
 
 4. If you check the Game View you will be able to see there the score will be displayed. It's in the center, but you can move it to a better spot. Use the text element's **Rect Transform** in the **Inspector** to move the score into the corner of the screen (us the x and y values to move it into place. changing the z value can change the size of the text).
 
-    ![](/en/images/GUIScoreText.png)
+    ![](/assets/GUIScoreText.png)
 
 5. Now that you have a place to display the score, you need to update the score. You want to update the score when a laser collides withan asteroid. The code that detects that collision is in the "laserClone" script. However, we need a variable to keep track of the player's score. The score can't be put in the laserClone script because it is destroyed every time the laser it is attached to is destroyed. You will need to use a **static variable**.
 
