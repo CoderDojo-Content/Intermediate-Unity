@@ -4,12 +4,13 @@
 
 3. Play around with the properties in the **Text Script**. Make sure you change the color to something that will show up on your background (white works well) and set the **Font Size** to 27.
 
-4. If you check the Game View you will be able to see there the score will be displayed. It's in the center, but you can move it to a better spot. Use the text element's **Rect Transform** in the **Inspector** to move the score into the corner of the screen.
+4. If you check the Game View you will be able to see there the score will be displayed. It's in the center, but you can move it to a better spot. Use the text element's **Rect Transform** in the **Inspector** to move the score into the corner of the screen (us the x and y values to move it into place. changing the z value can change the size of the text).
 (**_picture_**)
 
-5. Now that you have a place to display the score, you need to update the score. You want to update the score when a laser collides an asteroid. The code that detects that collision is in the "laserClone" script. However, we need a variable to keep track of the player's score. The score can't be put in the laserClone script because it is destroyed every time the laser it is attached to is destroyed. You will need to use the **static variable**.
+5. Now that you have a place to display the score, you need to update the score. You want to update the score when a laser collides withan asteroid. The code that detects that collision is in the "laserClone" script. However, we need a variable to keep track of the player's score. The score can't be put in the laserClone script because it is destroyed every time the laser it is attached to is destroyed. You will need to use a **static variable**.
 
-   A **static variable** is used to store a variable across all instances of a class. This means you can use the variable by referencing a class. This can even be referenced from other classes.
+   A **static variable** is used to store a variable (with the same value!) across all instances of a class. This means you can use the variable by referencing a class. This can even be referenced from other classes. Without the static keyword you will not be able to access the variable and the value will be different for multiple instances!
+   
    Add  to the "Player" script. 
    
    ```csharp
