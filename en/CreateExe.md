@@ -14,4 +14,4 @@
 
 8. Click **Play!**
 
-9. All you need is to send people your .exe file and the _Data folder and they can play your new game!
+9. All you need is to send your friends the .exe file and the _Data folder and they can play your new game!
