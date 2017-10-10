@@ -32,3 +32,4 @@
     ```csharp
     Cursor.visible = false;
     ```
+    Try running the game and moving the "Player" object with your mouse!
