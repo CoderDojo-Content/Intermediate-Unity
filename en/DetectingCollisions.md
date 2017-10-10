@@ -1,4 +1,4 @@
-1. You have all the components of your game working now! Awesome, but... they don't do anything when they collide. Colliding is when two objects touch each other. You need to detect the collision between the game's objects and write a script that does something when that collision is detected.
+1. You have all the components of your game working now! Awesome, but... they don't do anything when they **collide**. **Colliding** is when two objects touch each other. You need to detect the **collision** between the game's objects and write a script that does something when that **collision** is detected.
 
 2. Create a new C# script called "laserClone". Add the following code to the script.
 
@@ -14,7 +14,7 @@
     }
   ```
   
-  **OnCollisionEnter()** is a built in function that is called when the object the script is attached to and another object collide. Within this function you have two **GameObjects** `col.gameObject` and `gameObject`. `gameObject` is what the script is attached to (the laser clone) and `col.gameOBject` is the thing colliding with the laser (the asteroid). `col.gameobject.name` returns the name of the object the laser collided with. The `if` statement is to make sure that if the laser collided with an asteroid (which will be called Asteroid(Clone)), then the two objects will be destroyed. 
+  `OnCollisionEnter(Collision col)` is a built in function that is called when the object the script is attached to and another object collide. Within this function you have two **GameObjects** `col.gameObject` and `gameObject`. `gameObject` is what the script is attached to (the laser clone) and `col.gameOBject` is the thing colliding with the laser (the asteroid). `col.gameobject.name` returns the name of the object the laser collided with. The `if` statement is to make sure that if the laser collided with an asteroid (which will be called Asteroid(Clone)), then the two objects will be destroyed. 
   
 3. Since you're destroying asteroids, you could make it play a sound! Create an **Empty** (**GameObject > Create Empty**) and call it "AsteroidExplosion". Add an **AudioSource** component to the Empty. Open up the "Audio" Assets folder and drag and drop the "DestroyAsteroidSound" sound into the "AsteroidExplosion" **Inspector** for "Audio Clip". Finally, uncheck the "Play On Awake" property. 
 
