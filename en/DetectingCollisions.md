@@ -39,9 +39,9 @@
         }
     }
     ```
-    Do you know what the gameObject is here? It is your "Player" object because your script is attached to the "Player" object. That means the col.gameObject is an asteroid.
+    Do you know what the `gameObject` is here? It is your "Player" object because your script is attached to the "Player" object. That means the `col.gameObject` is an asteroid.
     
-6. Lets play a different noise if the player collides with an asteroid. Create another **Empty** and call it "DestroyPlayerSound". Add an**AudioSource** and add the "explosion_player" sound to it. Finally, add this code to the **OnCollisionEnter()** function in the "Player" script.
+6. Let's play a different noise if the player collides with an asteroid. Create another **Empty** and call it "DestroyPlayerSound". Add an **AudioSource** and add the "explosion_player" sound to it. Finally, add this code to the **OnCollisionEnter()** function in the "Player" script.
 
     ```csharp
     AudioSource audio = GameObject.Find("DestroyPlayerSound").GetComponent<AudioSource>();
@@ -49,5 +49,7 @@
     ```
    
 7. You have detected collisions between all of the objects in your game. You might have noticed a bug after the player is destroyed! If you have the time after you finish you can try to fix the bug!
+
+    * Try shooting after you run into an asteroid!
 
     
