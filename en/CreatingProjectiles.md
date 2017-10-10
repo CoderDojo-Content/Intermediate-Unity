@@ -26,7 +26,10 @@
     }
     ```
     
-    Notice this looks similar to the obstacle that you just created. You've added an `if` statement so that this block of code only runs when the player left clicks. (You can find other input options here. [dojo.soy/Input](https://docs.unity3d.com/ScriptReference/Input.html). -(challenge fire on space)-
+    Notice this looks similar to the obstacle that you just created. You've added an `if` statement so that this block of code only runs when the player left clicks. 
+    
+    * You can find other input options here: [dojo.soy/Input](https://docs.unity3d.com/ScriptReference/Input.html). If you want, try to allow the player to fire a laser when they press a different button like the spacebar.
+    
     
 4. That almost works, but if you ran the game you noticed that the laser didn't come from the player. What code have you used to find where the mouse location is? Add this code to your "lasers" script
 
