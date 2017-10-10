@@ -10,7 +10,7 @@
 
 5. Now that you have a place to display the score, you need to update the score. You want to update the score when a laser collides withan asteroid. The code that detects that collision is in the "laserClone" script. However, we need a variable to keep track of the player's score. The score can't be put in the laserClone script because it is destroyed every time the laser it is attached to is destroyed. You will need to use a **static variable**.
 
-   A **static variable** is used to store a variable (with the same value!) across all instances of a class. This means you can use the variable by referencing a class. This can even be referenced from other classes. Without the static keyword you will not be able to access the variable and the value will be different for multiple instances!
+   A **static variable** is used to store a variable (with the same value!) across **all instances** of a class. This means you can use the variable by referencing a **class**. This can even be referenced from other classes. Without the **static** keyword you will not be able to access the variable and the value will be different for multiple instances!
    
    Add  to the "Player" script. 
    
@@ -30,7 +30,7 @@
     displayedScore.text = "Score: " + Player.score.ToString();
     ```
     
-    **Player.score** is how you access the static variable you made in the Player class. it means from the "Player" class get the "score" variable. **Score.text** is the text that is displayed to the screen for the players score. **ToString()** just converts the score which is a number into a string so it can be displayed. 
+    **Player.score** is how you access the static variable you made in the Player class. it means from the "Player" class get the "score" variable. **displayedScore.text** is the text that is displayed to the screen for the players score. **ToString()** just converts the score which is a number into a string so it can be displayed. 
     
 7. Add a new **UI Text** element to your canvas and call it "winOrLose". Make the text style match your score's text style, then remove all the text from the text box. Change the width of the **Rect Transform** to 200.
 
