@@ -26,7 +26,7 @@
   
   Drag the Asteroid prefab form the "Prefabs" folder and drop it into the "asteroid" box for your "asteroids" script in the **Inspector** for your "Asteroids" object. Try running your game.
   
-4. WOAH! That was a lot of asteroids being created! When you're repeatedly creating an asteroid, you want to be able to control how fast it appears. To do that you can use Unity's built in function **InvokeRepeating**! Add this to your code above **Update()**.
+4. WOAH! That was a lot of asteroids being created! When you're repeatedly creating an asteroid, you want to be able to control how fast it appears. To do that you can use Unity's built in function `InvokeRepeating()`! Add this to your code above `Update()`.
 
     ```csharp
     public float spawnTime = 1f;
