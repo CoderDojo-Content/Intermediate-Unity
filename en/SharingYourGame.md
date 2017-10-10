@@ -8,9 +8,9 @@
 
 5. Click on **Resolution and Presentation** and uncheck **Default is FullScreen**.
 
-6. Back in the **Build Setting** menu click **Build and Run**. Save your game as anything you want (we used "UnityIntermediateSushi").
+6. Back in the **Build Settings** menu click **Build and Run**. Save your game as anything you want (we used "UnityIntermediateSushi").
 
-7. A window should pop-up with some settings. Make sure the resolution is the same as the resolution you used in your **Game View** in Unity. Also make sure windowed is checked!
+7. A window should pop-up with some settings. Make sure the **resolution** is the same as the resolution you used in your standalone **Game View** in Unity. Also make sure **windowed** is checked!
 
 8. Click **Play!**
 
