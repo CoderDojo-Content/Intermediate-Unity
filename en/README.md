@@ -2,10 +2,10 @@
 
     ![](/assets/GameOverview.png)
 
-2. Download [dojo.soy/IntermediateProjectStart](https://drive.google.com/open?id=0BybwesgH-2_ZWV9KdHJGNDBnVXM) Unity Project with all of the assets you need to make a game! (final package of game assets). You wont need to make your own new Unity Project, because this creates a project for you!
+2. Download the [dojo.soy/IntermediateProjectStart](https://drive.google.com/open?id=0BybwesgH-2_ZWV9KdHJGNDBnVXM) Unity Project. This has all of the assets you need to make make a game with these Sushi Cards! You wont need to make your own new Unity Project, because this creates a project for you. You will need to open un-zip the file you downloaded and open it within Unity.
 
 3. You can also find assets on the Unity Asset Store! In the Unity go (**Window > Asset Store**) and click on "Filters" (on the right of the search bar). Now click "FREE ONLY". 
 
     ![](/assets/AssetStoreClickFree.PNG)
     
-    You can use these assets to change what your game looks like!
+     Another option is downloading assets from [dojo.soy/opengameart](https://opengameart.org/). You can download different assets and use them to change what your game looks like!
