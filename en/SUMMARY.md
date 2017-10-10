@@ -7,5 +7,5 @@
 * [Creating Projectiles](CreatingProjectiles.md)
 * [Detecting Collisions](DetectingCollisions.md)
 * [GUI](GUI.md)
-* [Create a .exe](CreateExe.md)
+* [Sharing Your Game](SharingYOurGame.md)
 
