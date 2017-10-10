@@ -1,4 +1,4 @@
-1. Now lets create something to destroy the asteroids. In game programming and physics a **projectile** is an object that is cast (thrown, fired, moved) from one place to another. So, when a football player kicks the ball, in physics, the ball would become a projectile once it starts moving.
+1. Now let's create something to destroy the asteroids. In game programming and physics a **projectile** is an object that is cast (thrown, fired, moved) from one place to another. So, when a football player kicks the ball, in physics, the ball would become a projectile once it starts moving.
 
 2. Create a new C# script called "lasers" (make sure its in the "Scripts" folder) and attach it to the empty "Lasers" object you made earlier.
 
@@ -26,7 +26,7 @@
     }
     ```
     
-    Notice this looks similar to the obstacle that you just created. You've added an if statement so that this block of code only runs when the player left clicks. (You can find other input options here. [dojo.soy/Input](https://docs.unity3d.com/ScriptReference/Input.html). -(challenge fire on space)-
+    Notice this looks similar to the obstacle that you just created. You've added an `if` statement so that this block of code only runs when the player left clicks. (You can find other input options here. [dojo.soy/Input](https://docs.unity3d.com/ScriptReference/Input.html). -(challenge fire on space)-
     
 4. That almost works, but if you ran the game you noticed that the laser didn't come from the player. What code have you used to find where the mouse location is? Add this code to your "lasers" script
 
