@@ -1,6 +1,6 @@
 1. In these Sushi Cards you will learn how to make a game that is similar to the classic Asteroids game! The player will control a space drone that is flying through asteroids. You will learn how to use mouse input, move other objects that aren't your player, and how to send the game to your friends.
 
-    ![](/assets/FinishedGame.png)
+    ![](/assets/FinishedGame.jpg)
 
 2. Download the [dojo.soy/IntermediateProjectStart](https://drive.google.com/open?id=0BybwesgH-2_ZWV9KdHJGNDBnVXM) Unity Project. This has all of the assets you need to make make a game with these Sushi Cards! You wont need to make your own new Unity Project, because this creates a project for you. You will need to open un-zip the file you downloaded and open it within Unity.
 
