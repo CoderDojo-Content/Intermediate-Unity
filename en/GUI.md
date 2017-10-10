@@ -44,7 +44,7 @@
         Time.timeScale = 0;
     }
     ```
-    This **function** requires a **parameter** or the variable declaration in the parenthesis after the function name. This way you can display any text when the function is called. **Time.timeScale** is the speed the game is running at... setting it to 0 stops time in the game.
+    This **function** requires a **parameter**. This way you can display any text when the function is called. **Time.timeScale** is the speed the game is running at... setting it to 0 stops time in the game.
     
 9. The last step to have your player win or lose is **calling** (running the code in a function) the function you just added. When the player loses is when they collide with an asteroid, so you should **call** the "endGame()" function in the **OnCollisionEnter()** function.
 
