@@ -1,10 +1,10 @@
-1. The graphical User Interface (GUI) is how your game can display information to the player. You're going to add a score to your game and make the player win or lose.
+1. The **Graphical User Interface (GUI)** is how your game can display information to the player. You're going to add a score to your game and make the player win or lose.
 
 2. Create an **UI Text** element (**GameObject > UI > Text**) and rename it "Score". In the "Score" **Inspector** there is a text box in the **Text Script** property. Change the text to "Score: 0". This also added an object to your hierarchy called a **Canvas**, this is where all of your GUI elements will be displayed.
 
-3. Play around with the properties in the **Text Script**. Make sure you change the color to something that will show up on your background (white works well) and set the **Font Size** to 27.
+3. Play around with the properties in the **Text Script**with the **Inspector**. Make sure you change the color to something that will show up on your background (white works well) and set the **Font Size** to 27.
 
-4. If you check the Game View you will be able to see there the score will be displayed. It's in the center, but you can move it to a better spot. Use the text element's **Rect Transform** in the **Inspector** to move the score into the corner of the screen (us the x and y values to move it into place. changing the z value can change the size of the text).
+4. If you check the Game View you will be able to see there the score will be displayed. It's in the center, but you can move it to a better spot. Use the text element's **Rect Transform** in the **Inspector** to move the score into the corner of the screen (use the **x** and **y** values to move it into place).
 
     ![](/assets/GUIImage.png)
 
@@ -25,7 +25,7 @@
 6. Now that you have a variable to change, you can update the score in the "OnCollisionEnter()" function in the "laserClone" script.
 
     ```csharp
-    Text Score = GameObject.Find("Text").GetComponent<Text>();
+    Text scoreText = GameObject.Find("Text").GetComponent<Text>();
     Player.score = Player.score + 1;
     Score.text = "Score: " + Player.score.ToString();
     ```
