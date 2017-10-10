@@ -48,7 +48,7 @@
     audio.Play();
     ```
    
-7. You have detected collisions between all of the objects in your game. You might have noticed a bug after the player is destroyed! If you have the time after you finish you can try to fix the bug!
+7. You have detected collisions between all of the objects in your game. You might have noticed a bug after the player is destroyed! If you have the time after you finish these Sushi Cards you can try to fix the bug!
 
     * Try shooting after you run into an asteroid!
 
