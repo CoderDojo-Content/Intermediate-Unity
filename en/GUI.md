@@ -25,7 +25,7 @@
 6. Now that you have a variable to change, you can update the score in the "OnCollisionEnter()" function in the "laserClone" script.
 
     ```csharp
-    Text scoreText = GameObject.Find("Text").GetComponent<Text>();
+    Text displayedScore = GameObject.Find("Text").GetComponent<Text>();
     Player.score = Player.score + 1;
     Score.text = "Score: " + Player.score.ToString();
     ```
