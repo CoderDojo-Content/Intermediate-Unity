@@ -8,11 +8,11 @@
     ```
     Now lets break down what this code does! 
 
-    **Vector3**'s are structures (a structure stores multiple variables in one unit). Unity uses **Vector3** to keep track of an object's position in the world (x, y, z). So, when you set the **Vector3** equal to the **Input.mouseposition** the x and y values of the **Vector3** are changed each frame (because its in the update function).
+    **Vector3**s are structures (a structure stores multiple variables in one unit). Unity uses **Vector3** to keep track of an object's position in the world (x, y, z). So, when you set the **Vector3** equal to the `Input.mouseposition` the x and y values of the **Vector3** are changed each frame (because its in the update function).
     
-     Notice **Input.mousePosition** doesn't change the **Vector3**'s position on the z-axis. You can set the z value by using "**.**" (called the "Dot Operator"). This allows us to access the variables within the **Vector3** structure.
+     `Input.mousePosition` doesn't change the **Vector3**'s position on the z-axis. You can set the z value by using "**.**" (called the "Dot Operator"). This allows us to access the variables within the **Vector3** structure.
      
-     The last line moves our "player" object to the position of our mouse!  **transform.position** changes the location of your "Player" object. `Camera.main.ScreenToWorldPoint(mousePos)` sets the position of your "Player" object in the game world space.
+     The last line moves our "player" object to the position of our mouse!      `transform.position` changes the location of your "Player" object. `Camera.main.ScreenToWorldPoint(mousePos)` sets the position of your "Player" object in the game world space.
      
      Now try to run your game! What is something that you might want to change about where the "player" object goes?
      
