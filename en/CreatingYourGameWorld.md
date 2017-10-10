@@ -16,4 +16,4 @@ Click "Add Layer...". In the first open layer type "Background" and go back to t
 
 8. Your scene should look like this when it is done!
     
-    ![](assets/CreateYourGameWorld.png)
+    ![](assets/SceneComplete.png)
