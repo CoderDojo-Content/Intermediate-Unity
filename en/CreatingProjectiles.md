@@ -1,4 +1,4 @@
-1. Now let's create something to destroy the asteroids. In game programming and physics a **projectile** is an object that is cast (thrown, fired, moved) from one place to another. So, when a football player kicks the ball, in physics, the ball would become a projectile once it starts moving.
+1. Now let's create something to destroy the asteroids. In game programming and physics a **projectile** is an object that is cast (thrown, fired, moved) from one place to another and **gravity** affects it. So, when a football player kicks the ball, in physics, the ball would become a projectile once it starts moving.
 
 2. Create a new C# script called "lasers" (make sure its in the "Scripts" folder) and attach it to the empty "Lasers" object you made earlier.
 
