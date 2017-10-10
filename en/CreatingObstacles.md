@@ -52,7 +52,7 @@
         return spawnPosition;
     }
     ```
-    Putting **Vector3** instead of **void** in front of a function declaration means that the function will return a **Vector3** object. **Random.Range(.05f, .95f)** returns a random number between the two numbers given in the parameters. That number is then divided by 10 so that we get a number between 1 and 0, or the camera's viewport dimensions. You then create a **Vector3** to return called "spawnPosition". and set the "spawnPosition" to (our randomly generated x position, a y position that is off the screen, the z position that is level with your player object).
+    Putting **Vector3** instead of **void** in front of a function declaration means that the function will return a **Vector3** object. **Random.Range(.05f, .95f)** returns a random number between the two numbers given in the **parameters** (a parameter is anything in the parenthesis following a function). That number is then divided by 10 so that we get a number between 1 and 0, or the camera's viewport dimensions. You then create a **Vector3** to return called "spawnPosition". and set the "spawnPosition" to (our randomly generated x position, a y position that is off the screen, the z position that is level with your player object).
     
    Remove these lines:
     
