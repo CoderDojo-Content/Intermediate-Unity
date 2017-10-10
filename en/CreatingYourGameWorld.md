@@ -8,7 +8,7 @@
 
 5. Now lets add something to control! From the "Prefabs" folder drag and drop the "Player" object onto your scene view. Set the **Transform** position to (0, 0, 0)
 
-6. Did you notice that the spaceship has a shadow? It doesn't look very good so, you can get rid of it. To select which objects the "Directional Light" applies to you use the **Culling Mask** property of the light and layers. In the "Directional Light" **Inspector** click the "Layers" drop down on the top right.
+6. Did you notice that the spaceship has a shadow? It doesn't look very good so, you can get rid of it. To select which objects the "Directional Light" applies to you use the **Culling Mask** and **Layers** properties of the light. In the "Directional Light" **Inspector** click the "Layers" drop down on the top right.
     ![](assets/LightInspector.png)
 Click "Add Layer...". In the first open layer type "Background" and go back to the "Directional Light" **Inspector**. Click the **Culling Mask** drop down menu and select "Everything". Now deselect the "Background" in the **Culling Mask**. The **Culling Mask** will now say "Mixed...". Go to your "Background" object's **Inspector** and select the layer drop down menu and set it to the "Background" layer you just created. There will be no more shadow!
 
