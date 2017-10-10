@@ -40,7 +40,7 @@
     // Make laser come from front of player
     mousePos.y += 1f;
     ```
-    This code looks similar to the "Player" script, but you might have not seen this operator before `mousePos.y += 1f;`. Coders are pretty lazy, and using these "shorthand" operators allow us to shorten code. `a += b` is the same as ` a = a + b`, but notice how much shorter the first one is!
+    This code looks similar to the "Player" script, but you might have not seen this operator before `mousePos.y += 1f;`. Coders are pretty lazy and using these "shorthand" operators allow us to shorten code. `a += b` is the same as ` a = a + b`, but notice how much shorter the first one is! Here is a list of the shorthand operators in C#: [dojo.soy/C#ShorthandOperators](https://en.wikibooks.org/wiki/C_Sharp_Programming/Operators#Short-hand_Assignment).
 
     Finally, replace the `pos` in the **Instantiate()** function with `mousePos`
     
