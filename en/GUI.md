@@ -25,9 +25,9 @@
 6. Now that you have a variable to change, you can update the score in the "OnCollisionEnter()" function in the "laserClone" script.
 
     ```csharp
-    Text displayedScore = GameObject.Find("Text").GetComponent<Text>();
+    Text displayedScore = GameObject.Find("Score").GetComponent<Text>();
     Player.score = Player.score + 1;
-    Score.text = "Score: " + Player.score.ToString();
+    displayedScore.text = "Score: " + Player.score.ToString();
     ```
     
     **Player.score** is how you access the static variable you made in the Player class. it means from the "Player" class get the "score" variable. **Score.text** is the text that is displayed to the screen for the players score. **ToString()** just converts the score which is a number into a string so it can be displayed. 
