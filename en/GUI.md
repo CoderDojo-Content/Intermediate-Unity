@@ -52,7 +52,7 @@
 10. The last step to have your player win or lose is **calling** (running the code in a function) the function you just added. When the player loses is when they collide with an asteroid, so you should **call** the "endGame()" function in the **OnCollisionEnter()** function.
 
     ```csharp
-    endgame("GAME OVER");
+    endGame("GAME OVER");
     ``` 
  
  To make the player win, you can add an if statement in the **Update()** function that checks if the score is equal to a number. When the player reaches that number they will win! Add this if statement.
@@ -60,7 +60,7 @@
     ```csharp
     if (score = 10)
     {
-        endgame("You Win!");
+        endGame("You Win!");
     }
     ```
     Change 10 to whatever number you want the player to get to so that they win.
