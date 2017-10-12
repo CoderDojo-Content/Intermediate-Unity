@@ -31,13 +31,20 @@
     * You can find other input options here: [dojo.soy/Input](https://docs.unity3d.com/ScriptReference/Input.html). If you want, try to allow the player to fire a laser when they press a different button like the spacebar.
     
     
-4. That almost works, but if you run the game you will see that the laser doesn't come from the player. Remember the code we used in the "Player" script to find where the mouse location is? You will use the same logic so the game knows where to fire a laser from. Add this code to your "lasers" script:
+4. That almost works, but if you run the game you will see that the laser doesn't come from the player. Remember the code we used in the "Player" script to find where the mouse location is? You will use the same logic so the game knows where to fire a laser from. Replace 
+    ```csharp
+    Vector3 pos;
+    pos.x = 0;
+    pos.y = 0;
+    pos.z = 0;
+    ```
+    
+    with
 
     ```csharp
     Vector3 mousePos = Input.mousePosition;
     mousePos.z = 15f;
     mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-    // Make laser come from front of player
     mousePos.y += 1f;
     ```
     This code looks similar to the "Player" script, but you might have not seen this operator before `mousePos.y += 1f;`. Coders are pretty lazy and using these "shorthand" operators allow us to shorten code. `a += b` is the same as ` a = a + b`, but notice how much shorter the first one is! Here is a list of the shorthand operators in C#: [dojo.soy/C#ShorthandOperators](https://en.wikibooks.org/wiki/C_Sharp_Programming/Operators#Short-hand_Assignment).
