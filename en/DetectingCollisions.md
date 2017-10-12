@@ -1,6 +1,6 @@
 1. You have all the components of your game working now! Awesome, but... they don't do anything when they **collide**. **Colliding** is when two objects touch each other. You need to detect the **collision** between the game's objects and write a script that does something when that **collision** is detected.
 
-2. Create a new C# script called "LaserClone". Add the following code to the script.
+2. Create a new C# script called "LaserClone". Add the following code to the script in the `Update()` function.
 
   ```csharp
     public void OnCollisionEnter(Collision col)
