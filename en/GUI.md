@@ -28,7 +28,7 @@
     PlayerMover playerScript = GameObject.Find("Player").GetComponent<PlayerMover>();
     playerScript.score += 1f;
     Text Score = GameObject.Find("Text").GetComponent<Text>();
-            Score.text = "Score: " + playerScript.score.ToString();
+    Score.text = "Score: " + playerScript.score.ToString();
             
     ```
     
