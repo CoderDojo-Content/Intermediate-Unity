@@ -24,7 +24,7 @@
   
 4. Since you're destroying asteroids, you could make it play a sound! Create an **Empty** (**GameObject > Create Empty**) and call it "AsteroidExplosion". Add an **AudioSource** component to the Empty. Open up the "Audio" Assets folder and drag and drop the "DestroyAsteroidSound" sound into the "AsteroidExplosion" **Inspector** for "Audio Clip". Finally, uncheck the "Play On Awake" property. 
 
-5. To play the **AudioSource** some code needs to be added into the `if` statement you made in the last step.
+5. To play the **AudioSource** some code needs to be added into the `if` statement you made in 2nd step.
 
     ```csharp
     AudioSource audio = GameObject.Find("AsteroidExplosion").GetComponent<AudioSource>();
