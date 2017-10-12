@@ -25,12 +25,12 @@
 6. Now that you have a variable to change, you can update the score in the "OnCollisionEnter()" function in the "laserClone" script.
 
     ```csharp
-    Text displayedScore = GameObject.Find("Score").GetComponent<Text>();
-    Player.score = Player.score + 1;
-    displayedScore.text = "Score: " + Player.score.ToString();
+    GameObject player = ;
+    PlayerMover playerScript = GameObject.Find("Player").GetComponent<PlayerMover>();
+    playerScript.score += 1f;
     ```
     
-    **Player.score** is how you access the static variable you made in the Player class. It means from the "Player" class get the "score" variable. **displayedScore.text** is the text that is displayed to the screen for the players score. **ToString()** just converts the score which is a number into a string so it can be displayed. 
+    ```Player.score** is how you access the static variable you made in the Player class. It means from the "Player" class get the "score" variable. **displayedScore.text** is the text that is displayed to the screen for the players score. **ToString()** just converts the score which is a number into a string so it can be displayed. 
     
 7. Add a new **UI Text** element to your canvas and call it "winOrLose". Make the text style match your score's text style, then remove all the text from the text box. Change the width of the **Rect Transform** to 200.
 
