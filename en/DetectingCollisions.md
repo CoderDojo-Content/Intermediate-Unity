@@ -19,8 +19,7 @@
 3. The "LaserClone" script now needs to be attached to the **Instantiated** lasers. You can do this by adding this code into the "Lasers" script after the `Instantiate()` function: 
 
     ```csharp
-    laserClone.AddComponent<laserClone>();
-    Rigidbody laserCloneRB = laserClone.GetComponent<Rigidbody>();
+    laserClone.AddComponent<LaserClone>();
     ``` 
   
 4. Since you're destroying asteroids, you could make it play a sound! Create an **Empty** (**GameObject > Create Empty**) and call it "AsteroidExplosion". Add an **AudioSource** component to the Empty. Open up the "Audio" Assets folder and drag and drop the "DestroyAsteroidSound" sound into the "AsteroidExplosion" **Inspector** for "Audio Clip". Finally, uncheck the "Play On Awake" property. 
