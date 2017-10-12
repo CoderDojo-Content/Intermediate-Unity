@@ -42,7 +42,7 @@
     ```csharp
     void endGame(string text)
     {
-        Text endgameText = GameObject.Find("endgameText").GetComponent<Text>();
+        Text endgameText = GameObject.Find("winOrLose").GetComponent<Text>();
         endgameText.text = text;
         Time.timeScale = 0;
     }
