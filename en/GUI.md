@@ -58,7 +58,7 @@
  To make the player win, you can add an if statement in the **Update()** function that checks if the score is equal to a number. When the player reaches that number they will win! Add this if statement.
 
     ```csharp
-    if (score = 10)
+    if (score == 10)
     {
         endGame("You Win!");
     }
