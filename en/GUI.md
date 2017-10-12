@@ -29,7 +29,6 @@
     playerScript.score += 1f;
     Text Score = GameObject.Find("Text").GetComponent<Text>();
     Score.text = "Score: " + playerScript.score.ToString();
-            
     ```
     
     ```Player.score** is how you access the static variable you made in the Player class. It means from the "Player" class get the "score" variable. **displayedScore.text** is the text that is displayed to the screen for the players score. **ToString()** just converts the score which is a number into a string so it can be displayed. 
