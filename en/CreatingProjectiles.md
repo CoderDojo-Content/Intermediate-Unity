@@ -31,7 +31,7 @@
     * You can find other input options here: [dojo.soy/Input](https://docs.unity3d.com/ScriptReference/Input.html). If you want, try to allow the player to fire a laser when they press a different button like the spacebar.
     
     
-4. That almost works, but if you run the game you will see that the laser doesn't come from the player. Remember the code we used in the "Player: script to find where the mouse location is? You will use the same logic so the game knows where to fire a laser from. Add this code to your "lasers" script:
+4. That almost works, but if you run the game you will see that the laser doesn't come from the player. Remember the code we used in the "Player" script to find where the mouse location is? You will use the same logic so the game knows where to fire a laser from. Add this code to your "lasers" script:
 
     ```csharp
     Vector3 mousePos = Input.mousePosition;
