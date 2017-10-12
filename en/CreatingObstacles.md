@@ -16,13 +16,13 @@
     GameObject asteroidClone = Instantiate(asteroid, spawnPosition, asteroid.transform.rotation) as GameObject;
     // Move clones
     Rigidbody asteroidCloneRB = asteroidClone.GetComponent<Rigidbody>();
-    asteroidCloneRB.velocity = -(transform.up * asteroidSpeed);
+    asteroidCloneRB.velocity = new Vector3(0, -(asteroidSpeed), 0);
     // Make sure clone is destroyed
     Destroy(asteroidClone, 10f);
   }
   ```
   
-  To understand what's happening here you need to know what **instantiate** means. **Instantiating** something is like building something from plans or instructions. If you're backing the a cake, the cake is the **instance** and the recipe is the **Instantiate()** function. In the game world, your cake is instead a **GameObject**! However, when you instantiate an object you must **Destroy()** the **instance** when you're done with it. If you don't **destroy** an instance there will, eventually, be too many objects for you computer to keep track of, and it will slow down. The last line of this code destroys the instantiated object after 10 seconds. To make your asteroids move at a constant speed you change the **Rigidbody**'s **velocity** property.
+  To understand what's happening here you need to know what **instantiate** means. **Instantiating** something is like building something from plans or instructions. If you're backing the a cake, the cake is the **instance** and the recipe is the **Instantiate()** function. In the game world, your cake is instead a **GameObject**! However, when you instantiate an object you must **Destroy()** the **instance** when you're done with it. If you don't **destroy** an instance there will, eventually, be too many objects for you computer to keep track of, and it will slow down. The last line of this code destroys the instantiated object after 10 seconds. To make your asteroids move at a constant speed you change the **Rigidbody**'s **velocity** property, and you just need to add a Vector3 with a speed in a direction.
   
   Drag the Asteroid prefab form the "Prefabs" folder and drop it into the "asteroid" box for your "asteroids" script in the **Inspector** for your "Asteroids" object. Try running your game.
   
