@@ -1,4 +1,4 @@
-1. Only people have who have Unity can play your game right now. You can build your project so that you can send it to your friends to try out. 
+1. Only people have who have Unity can play your game right now. You can **build** (package your game up) your project so that you can send it to your friends to try out. 
 
 2. When you build your game, you are creating an **executable file** for the specific system that you choose. That could be PC, Mac, or Linux. Or it could be on a mobile platform! To build a game go (**File > Build Settings**)
 
