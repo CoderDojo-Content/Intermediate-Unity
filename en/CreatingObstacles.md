@@ -18,7 +18,7 @@
     Rigidbody asteroidCloneRB = asteroidClone.GetComponent<Rigidbody>();
     asteroidCloneRB.velocity = -(transform.up * asteroidSpeed);
     // Make sure clone is destroyed
-    Destroy(AsteroidClone, 10f);
+    Destroy(asteroidClone, 10f);
   }
   ```
   

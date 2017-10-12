@@ -12,7 +12,7 @@
     ![](assets/LightInspector.png)
 Click "Add Layer...". In the first open layer type "Background" and go back to the "Directional Light" **Inspector**. Click the **Culling Mask** drop down menu and select "Everything". Now deselect the "Background" in the **Culling Mask**. The **Culling Mask** will now say "Mixed...". Go to your "Background" object's **Inspector** and select the layer drop down menu and set it to the "Background" layer you just created. There will be no more shadow!
 
-7. To control the game with scripts without attaching them to a 3D object, "Empty Objects" can be used. Create an "Empty Object"(**GameObject > CreateEmpty**). Name this "Asteroid". Create another called "Lasers". 
+7. To control the game with scripts without attaching them to a 3D object, "Empty Objects" can be used. Create an "Empty Object"(**GameObject > CreateEmpty**). Name this "Asteroids". Create another called "Lasers". 
 
 8. Your scene should look like this when it is done!
     
