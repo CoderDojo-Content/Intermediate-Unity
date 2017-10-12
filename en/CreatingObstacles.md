@@ -16,7 +16,7 @@
     GameObject asteroidClone = Instantiate(asteroid, spawnPosition, asteroid.transform.rotation) as GameObject;
     // Move clones
     Rigidbody asteroidCloneRB = asteroidClone.GetComponent<Rigidbody>();
-    asteroidCloneRB.velocity = new Vector3(0, -(asteroidSpeed), 0);
+    asteroidCloneRB.velocity = -(transform.up * asteroidSpeed);
     // Make sure clone is destroyed
     Destroy(asteroidClone, 10f);
   }
