@@ -23,9 +23,9 @@
     Rigidbody laserCloneRB = laserClone.GetComponent<Rigidbody>();
     ``` 
   
-3. Since you're destroying asteroids, you could make it play a sound! Create an **Empty** (**GameObject > Create Empty**) and call it "AsteroidExplosion". Add an **AudioSource** component to the Empty. Open up the "Audio" Assets folder and drag and drop the "DestroyAsteroidSound" sound into the "AsteroidExplosion" **Inspector** for "Audio Clip". Finally, uncheck the "Play On Awake" property. 
+4. Since you're destroying asteroids, you could make it play a sound! Create an **Empty** (**GameObject > Create Empty**) and call it "AsteroidExplosion". Add an **AudioSource** component to the Empty. Open up the "Audio" Assets folder and drag and drop the "DestroyAsteroidSound" sound into the "AsteroidExplosion" **Inspector** for "Audio Clip". Finally, uncheck the "Play On Awake" property. 
 
-4. To play the **AudioSource** some code needs to be added into the `if` statement you made in the last step.
+5. To play the **AudioSource** some code needs to be added into the `if` statement you made in the last step.
 
     ```csharp
     AudioSource audio = GameObject.Find("AsteroidExplosion").GetComponent<AudioSource>();
@@ -34,7 +34,7 @@
     
     This code finds the game object you made with the first line. The second line plays the sound that you added to the **AudioSource**.
     
-5. Now you can detect a collision with an asteroid and the laser, but not your "Player" object and an asteroid. Add this code to your "Player" script
+6. Now you can detect a collision with an asteroid and the laser, but not your "Player" object and an asteroid. Add this code to your "Player" script
 
     ```csharp
     void OnCollisionEnter(Collision col)
@@ -48,14 +48,14 @@
     ```
     Do you know what the `gameObject` is here? It is your "Player" object because your script is attached to the "Player" object. That means the `col.gameObject` is an asteroid.
     
-6. Let's play a different noise if the player collides with an asteroid. Create another **Empty** and call it "PlayerExplosion". Add an **AudioSource** and add the "DestroyPlayerSound" sound to it. Finally, add this code to the `OnCollisionEnter()` function in the "Player" script.
+7. Let's play a different noise if the player collides with an asteroid. Create another **Empty** and call it "PlayerExplosion". Add an **AudioSource** and add the "DestroyPlayerSound" sound to it. Finally, add this code to the `OnCollisionEnter()` function in the "Player" script.
 
     ```csharp
     AudioSource audio = GameObject.Find("PlayerExplosion").GetComponent<AudioSource>();
     audio.Play();
     ```
    
-7. Try shooting after you run into an asteroid! 
+8. Try shooting after you run into an asteroid! 
 You have detected collisions between all of the objects in your game, but did you notice the bug? If you have the time after you finish these Sushi Cards you can try to fix the bug!
 
     
