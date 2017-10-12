@@ -2,7 +2,7 @@
 
 2. Create a 3D Object **Quad** and rename it to "Background" and set the **Transform** position to (0, 0, 1).
 
-3. Drag the background image from the "Materials" folder in the **Project Viewer** and drop it on the Background object in the **Hierarchy**. 
+3. Drag the "SpaceNebula" image from the "Materials" folder in the **Project Viewer** and drop it on the Background object in the **Hierarchy**. 
 
 4. Set the **Scale** of x and y on you "Background" **Quad** until it covers the entire Game Display. (Make sure it's set to the "Standalone" Aspect Ratio) Awesome, you have a background!
 
