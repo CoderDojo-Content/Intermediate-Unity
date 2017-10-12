@@ -33,7 +33,7 @@
     
     This code finds the game object you made with the first line. The second line plays the sound that you added to the **AudioSource**.
     
-6. Now you can detect a collision with an asteroid and the laser, but not your "Player" object and an asteroid. Add this code to your "Player" script
+6. Now you can detect a collision with an asteroid and the laser, but not your "Player" object and an asteroid. Add this code to your "Player" script under the `Update()` function:
 
     ```csharp
     void OnCollisionEnter(Collision col)
