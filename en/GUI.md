@@ -31,7 +31,7 @@
     displayedScore.text = "Score: " + playerScript.score.ToString();
     ```
     
-    ```Player.score** is how you access the static variable you made in the Player class. It means from the "Player" class get the "score" variable. **displayedScore.text** is the text that is displayed to the screen for the players score. **ToString()** just converts the score which is a number into a string so it can be displayed. 
+    The first line is how you access the public score variable you made in the Player class. It means find the "Player" object and get the "Player script. You access the score with the **dot operator** and one to the score. ```displayedScore.text``` is the text that is displayed to the screen for the players score. **ToString()** just converts the score which is a number into a string so it can be displayed. 
     
 7. Add a new **UI Text** element to your canvas and call it "winOrLose". Make the text style match your score's text style, then remove all the text from the text box. Change the width of the **Rect Transform** to 200.
 
