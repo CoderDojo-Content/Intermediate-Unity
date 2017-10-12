@@ -8,7 +8,7 @@
 
     ![](/assets/GUIImage.png)
 
-5. Now that you have a place to display the score, you need to update the score. You want to update the score when a laser collides withan asteroid. The code that detects that collision is in the "laserClone" script. However, you need a variable to keep track of the player's score. The score can't be put in the "laserClone" script because it is destroyed every time the laser it is attached to is destroyed. The "Player" object is active until the end of the game, so you can store the score there.
+5. Now that you have a place to display the score, you need to update the score. You want to update the score when a laser collides withan asteroid. The code that detects that collision is in the "LaserClone" script. However, you need a variable to keep track of the player's score. The score can't be put in the "LaserClone" script because it is destroyed every time the laser it is attached to is destroyed. The "Player" object is active until the end of the game, so you can store the score there.
 
    You may have seen the keywords **public** and **private** in your time with Unity. These keywords are **Access Modifiers**, and they (as you probably guessed) set the access level of a type or member that they modify. If you have a variable, adding **public** means that any code in your project can access the variable. adding **private** means the variable can be only accessed from code inside of the same class. If you don't put an **Access Modifier**, by default they will be **private**. 
    
