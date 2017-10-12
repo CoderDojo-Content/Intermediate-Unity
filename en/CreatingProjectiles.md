@@ -2,7 +2,7 @@
 
 2. Create a new C# script called "Lasers" (make sure its in the "Scripts" folder) and attach it to the empty "Lasers" object you made earlier.
 
-3.  Inside your "lasers" script, replace the code inside your lasers class with this code.
+3.  Inside your "Lasers" script, replace the code inside your lasers class with this code.
     
     ```csharp
     public float laserSpeed = 20f;
