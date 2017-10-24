@@ -42,22 +42,12 @@
     with
 
     ```csharp
-    Vector3 mousePos = Input.mousePosition;
-    mousePos.z = 15f;
-    mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-    mousePos.y += 1f;
+    Vector3 pos = Input.mousePosition;
+    pos.z = 15f;
+    pos = Camera.main.ScreenToWorldPoint(pos);
+    pos.y += 1f;
     ```
     This code looks similar to the "Player" script, but you might have not seen this operator before `mousePos.y += 1f;`. Coders are pretty lazy and using these "shorthand" operators allow us to shorten code. `a += b` is the same as ` a = a + b`, but notice how much shorter the first one is! Here is a list of the shorthand operators in C#: [dojo.soy/C#ShorthandOperators](https://en.wikibooks.org/wiki/C_Sharp_Programming/Operators#Short-hand_Assignment).
-
-    Finally, replace
-    
-    ```csharp
-    GameObject laserClone = Instantiate(laser, pos, transform.rotation) as GameObject;
-    ```
-    with
-    ```csharp
-    GameObject laserClone = Instantiate(laser, mousePos, transform.rotation) as GameObject;
-    ```
     
 5. Lasers make sounds too! Let's add a sound to this laser. Click on the laser in the "Prefabs" folder and add an **AudioSource** component (**Component > Audio > Audio Source**). From the "Audio" folder drag "LaserSound" into the **Audio Clip** property in the "Laser" prefab **Inspector**.
 
