@@ -2,7 +2,9 @@
 
     ![](/assets/FinishedGame.png)
 
-2. Download the [dojo.soy/IntermediateProjectStart](https://drive.google.com/open?id=0BybwesgH-2_ZWV9KdHJGNDBnVXM) Unity Project. This has all of the assets you need to create a game with these Sushi Cards! You won't need to make your own new Unity Project, because this creates a project for you. You will need to unzip the file you downloaded and open the project in Unity.
+2. These Sushi Cards are for Unity 2017.1! So if you have a different version, the pictures and some of the instructions might be a little different.
+
+3. Download the [dojo.soy/IntermediateProjectStart](https://drive.google.com/open?id=0BybwesgH-2_ZWV9KdHJGNDBnVXM) Unity Project. This has all of the assets you need to create a game with these Sushi Cards! You won't need to make your own new Unity Project, because this creates a project for you. You will need to unzip the file you downloaded and open the project in Unity.
 
 3. You might want to find different assets on the Unity Asset Store (if you don't like the ones in the download). In the Unity go (**Window > Asset Store**) and click on "Filters" (on the right of the search bar). Now click "FREE ONLY". 
 
