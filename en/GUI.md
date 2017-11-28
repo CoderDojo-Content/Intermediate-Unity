@@ -31,7 +31,7 @@
     displayedScore = GameObject.Find("Score").GetComponent<Text>();
     ```
     
-Finally, add this to the `OnCollisionEnter()` function:
+  Finally, add this to the `OnCollisionEnter()` function:
 
     ```csharp
     playerScript.score += 1;
