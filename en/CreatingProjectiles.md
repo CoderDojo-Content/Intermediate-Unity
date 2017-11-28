@@ -9,7 +9,7 @@
     void Update(){
       if (Input.GetMouseButtonDown(0))
       {
-        Vector3 createPosition = player.transform.location;
+        Vector3 createPosition = player.transform.position;
         createPosition.y += 1f;
         // Create a laser clone
         GameObject laserClone = Instantiate(laser, pos, transform.rotation) as GameObject; 
