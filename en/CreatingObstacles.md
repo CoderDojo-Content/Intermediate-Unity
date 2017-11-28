@@ -47,9 +47,9 @@
   and this into `Start()`:
   `rb.velocity = -(transform.up) * asteroidSpeed`
   
-You changed the **Rigidbody**'s **velocity** (the speed) property. `-(transform.up)` is the direction to move.
+  You changed the **Rigidbody**'s **velocity** (the speed) property. `-(transform.up)` is the direction to move.
 
-The final step is attaching the asteroid prefab's **Rigidbody** to the "MoveAsteroid" script and set the value of **asteroidSpeed** to 2.
+  The final step is attaching the asteroid prefab's **Rigidbody** to the "MoveAsteroid" script and set the value of **asteroidSpeed** to 2.
  
   ![](en/assets/unityRBattach.png) 
 
