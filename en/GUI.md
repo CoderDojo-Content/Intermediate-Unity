@@ -44,12 +44,11 @@ Finally, add this to the `OnCollisionEnter()` function:
     
 8. Add a new **UI Text** element to your canvas and call it "winOrLose". Make the text style match your score's text style, then remove all the text from the text box. Change the width of the **Rect Transform** to 200.
 
-9. Now you are going to update the "Player" script so that it updates the "winOrLose" text based on the player losing or winning your game. Since the code will be the same for losing and winning you can create a **function** so that you don't have duplicate code. Put this function in your "PlayerController" script.
+9. Now you are going to update the "Player" script so that it updates the "winOrLose" text based on the player losing or winning your game. Since the code will be the same for losing and winning you can create a **function** so that you don't have duplicate code. Add `Text endgameText;` above the `Start()` function in your "PlayerController" script. In the `Start()` function use `endgameText = GameObject.Find("winOrLose").GetComponent<Text>();` to find the Text **GameObject**. Finally, Create a function with this code:
 
     ```csharp
     void endGame(string text)
     {
-        Text endgameText = GameObject.Find("winOrLose").GetComponent<Text>();
         endgameText.text = text;
         Time.timeScale = 0;
     }
