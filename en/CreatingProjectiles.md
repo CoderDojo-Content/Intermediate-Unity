@@ -4,6 +4,7 @@
     
     ```csharp
     public GameObject laser;
+    public GameObject player;
     
     void Update(){
       if (Input.GetMouseButtonDown(0))
@@ -16,7 +17,7 @@
     }
     ```
     
-    Now, just attach the laser prefab to the script.
+    Now, just attach the "Laser" and "Player" prefabs to the script.
     
     Notice this looks similar to the obstacle that you just created. You've added an `if` statement so that this block of code only runs when the player left clicks.
 
