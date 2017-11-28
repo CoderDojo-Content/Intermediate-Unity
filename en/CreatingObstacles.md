@@ -38,9 +38,14 @@
  
  **gameObject** is the object the script is attached to. 10f destroys the asteroid after ten seconds.
  
-5. Lets make your asteroids move! You'll use the "MoveAsteroids" script.
-
-you change the **Rigidbody**'s **velocity** (the speed) property, and you just need to add a Vector3 with a speed in a direction.
+5. Lets make your asteroids move! You'll use the "MoveAsteroids" script. Add this above `Start ()`:
+  
+  ```csharp
+  public Rigidbody rb;
+  public float asteroidSpeed;
+  ```
+  
+You changed the **Rigidbody**'s **velocity** (the speed) property. `-(transform.up)` is the direction to move. 
   
   
   
