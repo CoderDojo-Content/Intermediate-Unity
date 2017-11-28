@@ -1,11 +1,13 @@
 1. You have all the components of your game working now! Awesome, but... they don't do anything when they **collide**. **Colliding** is when two objects touch each other. You need to detect the **collision** between the game's objects and write some scripts that do something when a **collision** is detected.
 
+2. Before you start, tagging the asteroid prefab will be helpful. Tag the asteroid prefab with "asteroid"
+
 2. Open the C# script called "DestroyLaser". Add the following code to the script (you could remove `Start()` and `Update()`):
 
   ```csharp
     public void OnCollisionEnter(Collision col)
     {
-      if (col.gameObject.name == "Asteroid(Clone)")
+      if (col.gameObject.CompareTag("Asteroid"))
       {
         // Destroy both objects
         Destroy(col.gameObject);
@@ -14,7 +16,7 @@
     }
   ```
   
-  `OnCollisionEnter(Collision col)` is a built in function that is called when the object the script is attached to and another object collide. Within this function you have two **GameObjects** `col.gameObject` and `gameObject`. `gameObject` is what the script is attached to (the laser clone) and `col.gameOBject` is the thing colliding with the laser (the asteroid). `col.gameobject.name` returns the name of the object the laser collided with. The `if` statement is to make sure that if the laser collided with an asteroid (which will be called Asteroid(Clone)), then the two objects will be destroyed.
+  `OnCollisionEnter(Collision col)` is a built in function that is called when the object the script is attached to and another object collide. Within this function you have two **GameObjects** `col.gameObject` and `gameObject`. `gameObject` is what the script is attached to (the laser clone) and `col.gameOBject` is the thing colliding with the laser (the asteroid). `col.gameobject.name` returns the name of the object the laser collided with. The `if` statement is to make sure that if the laser collided with an asteroid (which will be tagged "asteroid")), then the two objects will be destroyed.
 
 3. The "LaserClone" script now needs to be attached to the **Instantiated** lasers. You can do this by adding this code into the "Lasers" script after the `Instantiate()` function: 
 
