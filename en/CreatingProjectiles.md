@@ -29,7 +29,7 @@
     
     [Note]: You can find other input options here: [dojo.soy/Input](https://docs.unity3d.com/ScriptReference/Input.html). If you want, try to allow the player to fire a laser when they press a different button like the spacebar.
     
-3. Now open the "MoveLaser" script. Above `Start()` add `public float laserSpeed = 20f;
+3. Now open the "MoveLaser" script. Above `Start()` add `public float laserSpeed;` and in `Start()` add ` 
     
 5. Lasers make sounds! Lets add a sound to this laser. Click on the laser in the "Prefabs" folder and add an **AudioSource** component (**Component > Audio > Audio Source**). From the "Audio" folder drag "LaserSound" into the **Audio Clip** property in the "Laser" prefab **Inspector**.
 

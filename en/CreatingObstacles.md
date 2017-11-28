@@ -8,7 +8,7 @@
   void Update()
   {
     Vector3 createPosition = Vector3.zero;
-    GameObject asteroidClone = Instantiate(asteroid, createPosition, asteroid.transform.rotation) as GameObject;
+    Instantiate(asteroid, createPosition, asteroid.transform.rotation)
   }
   ```
   To understand what's happening here you need to know what **instantiate** means. **Instantiating** something is like building something from plans or instructions. If you're baking a cake, the cake is the **instance** and the recipe is the **Instantiate()** function. In the game world, your cake is instead a **GameObject**!
