@@ -6,7 +6,7 @@
 
 4. Play around with the properties in the **Text Script**with the **Inspector**. Make sure you change the color to something that will show up on your background (white works well) and set the **Font Size** to 27.
 
-5. If you check the Game View you will be able to see there the score will be displayed. It's in the center, but you can move it to a better spot. Use the text element's **Rect Transform** in the **Inspector** to move the score into the corner of the screen (use the **x** and **y** values to move it into place).
+5. If you check the Game View you will be able to see where the score will be displayed. It's in the center, but you can move it to a better spot. Use the text element's **Rect Transform** in the **Inspector** to move the score into the corner of the screen (use the **x** and **y** values to move it into place).
 
     ![](/assets/GUIImage.png)
 
@@ -14,7 +14,7 @@
 
    You may have seen the keywords **public** and **private** in your time with Unity. These keywords are **Access Modifiers**, and they (as you probably guessed) set the access level of a type or member that they modify. If you have a variable, adding **public** means that any code in your project can access the variable. adding **private** means the variable can be only accessed from code inside of the same class. If you don't put an **Access Modifier**, by default they will be **private**. 
    
-   Add  to the "Player" script. 
+   Add  to the "PlayerController" script. 
    
    ```csharp
    public int score;
