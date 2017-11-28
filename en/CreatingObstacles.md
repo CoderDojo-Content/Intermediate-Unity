@@ -53,18 +53,23 @@ The final step is attaching the asteroid prefab's **Rigidbody** to the "MoveAste
  
   ![](en/assets/unityRBattach.png) 
 
-6. Lets make it more fun by creating them at different locations every spawn. You can make a function that returns a random position to do this!
+6. Lets make it more fun by creating asteroids at different. You can make a function that returns a random position to do this! Add this function to the "CreateAsteroids" script:
   
     ```csharp
-    Vector3 randomSpawn()
+    Vector3 getRandomPosition()
     {
-        float xPos = Random.Range(.5f, 9.5f);
-        xPos = xPos / 10f;
-        Vector3 spawnPosition = Camera.main.ViewportToWorldPoint(new Vector3(xPos, 1.1f, 15f));
-        return spawnPosition;
+        float xPos = Random.Range(.05f, .95f);
+        Vector3 randomPosition = Camera.main.ViewportToWorldPoint(new Vector3(xPos, 1.1f, 15f));
+        return randomPosition;
     }
     ```
-    Putting **Vector3** instead of **void** in front of a function declaration means that the function will return a **Vector3** object. **Random.Range(.05f, .95f)** returns a random number between the two numbers given in the **parameters** (a parameter is anything in the parenthesis following a function). That number is then divided by 10 so that we get a number between 1 and 0, or the camera's viewport dimensions. You then create a **Vector3** to return called `spawnPosition`. and set the `spawnPosition` to (our randomly generated x position, a y position that is off the screen, the z position that is level with your player object).
+    Putting **Vector3** instead of **void** in front of a function declaration means that the function will return a **Vector3** object. 
+    
+    **Random.Range(.05f, .95f)** returns a random number between the two numbers given in the **parameters** (a parameter is anything in the parenthesis following a function). 
+    
+  The camera's viewport dimensions are 1 by 1 (the bottom left being (0,0) and the top right being (1,1)). 
+  
+  You then create a **Vector3** to return called `randomPosition`. and set the `randomPosition` to (our randomly generated x position, a y position that creates the asteroids above the screen, and the z position that is level with your player object).
     
     
-    Finally, change `Vector3 spawnPosition;` to ` Vector3 spawnPosition = randomSpawn();`. 
+    Finally, change `Vector3 spawnPosition;` to ` Vector3 spawnPosition = getRandomPosition();`. 
