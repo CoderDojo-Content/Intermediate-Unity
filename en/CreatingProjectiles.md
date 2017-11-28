@@ -29,7 +29,7 @@
     
     [Note]: You can find other input options here: [dojo.soy/Input](https://docs.unity3d.com/ScriptReference/Input.html). If you want, try to allow the player to fire a laser when they press a different button like the spacebar.
     
-3. Now open the "MoveLaser" script. Above `Start()` add `public Rigidbody rb` and `public float laserSpeed;`. In `Start()` add `rb.velocity = -(transform.up) * asteroidSpeed;`. Drag the script onto the "Laser" prefab . Then just add the laser's **Rigidbody** to the script and set "laserSpeed" to 20.
+3. Now open the "MoveLaser" script. Above `Start()` add `public Rigidbody rb` and `public float laserSpeed;`. In `Start()` add `rb.velocity = -(transform.up) * laserSpeed;`. Drag the script onto the "Laser" prefab . Then just add the laser's **Rigidbody** to the script and set "laserSpeed" to 20.
     
     Try out your lasers now!
 
