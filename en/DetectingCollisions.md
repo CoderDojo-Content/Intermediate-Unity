@@ -2,7 +2,7 @@
 
 2. Before you start, tagging the asteroid prefab will be helpful. Tag the asteroid prefab with "asteroid". Also take this step to attach the "DestoryLaser" and "DestroyAsteroid" scripts to their prefabs.
 
-2. Open the C# script called "DestroyLaser". Add the following code to the script (you could remove `Start()` and `Update()`):
+2. Open the C# script called "DestroyLaser". Add the following code to the script:
 
   ```csharp
     public void OnCollisionEnter(Collision col)

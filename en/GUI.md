@@ -24,7 +24,7 @@
    score = 0;
    ```
    
-7. Now that you have a variable to change, you can update the score in the "OnCollisionEnter()" function in the "LaserClone" script.
+7. Now that you have a variable to change, you can update the score in the "OnCollisionEnter()" function of the "destroyLaser" script.
 
     ```csharp
     Player playerScript = GameObject.Find("Player").GetComponent<Player>();
