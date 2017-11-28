@@ -32,8 +32,6 @@
 3. Now open the "MoveLaser" script. Above `Start()` add `public Rigidbody rb` and `public float laserSpeed;`. In `Start()` add `rb.velocity = transform.up * laserSpeed;`. Drag the script onto the "Laser" prefab . Then just add the laser's **Rigidbody** to the script and set "laserSpeed" to 20.
     
     Try out your lasers now!
-
-4.
     
 5. Lasers make sounds! Lets add a sound to this laser. Click on the laser in the "Prefabs" folder and add an **AudioSource** component (**Component > Audio > Audio Source**). From the "Audio" folder drag "LaserSound" into the **Audio Clip** property in the "Laser" prefab **Inspector**.
 
