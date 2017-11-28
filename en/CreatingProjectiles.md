@@ -12,7 +12,7 @@
         Vector3 createPosition = player.transform.position;
         createPosition.y += 1f;
         // Create a laser clone
-        GameObject laserClone = Instantiate(laser, pos, transform.rotation) as GameObject; 
+        Instantiate(laser, createPosition, transform.rotation); 
       }
     }
     ```
@@ -29,7 +29,9 @@
     
     [Note]: You can find other input options here: [dojo.soy/Input](https://docs.unity3d.com/ScriptReference/Input.html). If you want, try to allow the player to fire a laser when they press a different button like the spacebar.
     
-3. Now open the "MoveLaser" script. Above `Start()` add `public float laserSpeed;` and in `Start()` add ` 
+3. Now open the "MoveLaser" script. Above `Start()` add `public Rigidbody rb` and `public float laserSpeed;`. In `Start()` add `rb.velocity = -(transform.up) * asteroidSpeed;`. Drag the script onto the "Laser" prefab . Then just add the laser's **Rigidbody** to the script and set "laserSpeed" to 20.
+
+4.
     
 5. Lasers make sounds! Lets add a sound to this laser. Click on the laser in the "Prefabs" folder and add an **AudioSource** component (**Component > Audio > Audio Source**). From the "Audio" folder drag "LaserSound" into the **Audio Clip** property in the "Laser" prefab **Inspector**.
 
