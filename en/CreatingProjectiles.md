@@ -16,7 +16,9 @@
     }
     ```
     
-    Notice this looks similar to the obstacle that you just created. You've added an `if` statement so that this block of code only runs when the player left clicks. Put the "Laser" prefab to the script.
+    Now, just attach the laser prefab to the script.
+    
+    Notice this looks similar to the obstacle that you just created. You've added an `if` statement so that this block of code only runs when the player left clicks.
 
     `player.transform.location` is the center of the player **GameObject**. 
     
