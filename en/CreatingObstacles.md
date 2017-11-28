@@ -7,28 +7,28 @@
    
   void Update()
   {
-    Vector3 spawnPosition = Vector3.zero;
-    GameObject asteroidClone = Instantiate(asteroid, spawnPosition, asteroid.transform.rotation) as GameObject;
+    Vector3 createPosition = Vector3.zero;
+    GameObject asteroidClone = Instantiate(asteroid, createPosition, asteroid.transform.rotation) as GameObject;
   }
   ```
   To understand what's happening here you need to know what **instantiate** means. **Instantiating** something is like building something from plans or instructions. If you're baking a cake, the cake is the **instance** and the recipe is the **Instantiate()** function. In the game world, your cake is instead a **GameObject**!
 
   Drag the Asteroid prefab form the "Prefabs" folder and drop it into the "asteroid" box for your "CreateAsteroids" script in the **Inspector** for your "Asteroids" object. Try running your game.
 
-3. WOAH! That was a lot of asteroids being created!The **Update()** function happens really fast so a lot of asteroids spawn. You can control how fast the asteroids are created with the `InvokeRepeating()` function. Add this to your previous code:
+3. WOAH! That was a lot of asteroids being created!The **Update()** function happens really fast so a lot of asteroids get created. You can control how fast the asteroids are created with the `InvokeRepeating()` function. Add this to your previous code:
 
     ```csharp
-    public float spawnTime = 1f;
+    public float creationTime = 1f;
     
     // Use this for initialization
     void Start()
     {
     // 0f is when to start invoking repeat
-    InvokeRepeating("spawnAsteroid", 0f, spawnTime);
+    InvokeRepeating("createAsteroid", 0f, creationTime);
     }
     ```
     
-    Now change `Update()` to `spawnAsteroid()` and put the "asteroid" prefab into the the script's "asteroid" slot in the "Asteroids" object **Inspector**.
+    Now change `Update()` to `createAsteroid()` and put the "asteroid" prefab into the the script's "asteroid" slot in the "Asteroids" object **Inspector**.
     
     Try running the code now, it should create asteroids much slower.
    
@@ -71,6 +71,6 @@ The final step is attaching the asteroid prefab's **Rigidbody** to the "MoveAste
   
   You then create a **Vector3** to return called `randomPosition`. and set the `randomPosition` to (our randomly generated x position, a y position that creates the asteroids above the screen, and the z position that is level with your player object).
   
-  Finally, change `Vector3 spawnPosition;` to ` Vector3 spawnPosition = getRandomPosition();`.
+  Finally, change `Vector3 createPosition;` to ` Vector3 createPosition = getRandomPosition();`.
   
 7. Try the game out!

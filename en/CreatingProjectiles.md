@@ -1,11 +1,8 @@
-1. Now let's create something to destroy the asteroids. In game programming and physics a **projectile** is an object that is cast (thrown, fired, moved) from one place to another and **gravity** affects it. So, when a football player kicks the ball, in physics, the ball would become a projectile once it starts moving.
+1. Create a new folder called "Lasers" (make sure its in the "Scripts" folder). Now create three C# scripts:  "CreateLasers", "MoveLaser", and "DestoryLaser".
 
-2. Create a new C# script called "Lasers" (make sure its in the "Scripts" folder) and attach it to the empty "Lasers" object you made earlier.
-
-3.  Inside your "Lasers" script, replace the code inside your lasers class with this code.
+2. Start with creating a laser. Attach the "CreateLasers" script to the "Lasers" **GameObject**. Add this code: 
     
     ```csharp
-    public float laserSpeed = 20f;
     public GameObject laser;
     
     void Update(){
@@ -47,6 +44,6 @@
     ```
     This is setting the **Instatate** location of the laser to the ship. You dont wan't to hit the ship so adding 1 to the y value will stop that. You might not of seen this operator before `pos.y += 1f;`. Coders are pretty lazy and using these "shorthand" operators allow us to shorten code. `a += b` is the same as ` a = a + b`, but notice how much shorter the first one is! Here is a list of the shorthand operators in C#: [dojo.soy/C#ShorthandOperators](https://en.wikibooks.org/wiki/C_Sharp_Programming/Operators#Short-hand_Assignment).
     
-5. Lasers make sounds too! Let's add a sound to this laser. Click on the laser in the "Prefabs" folder and add an **AudioSource** component (**Component > Audio > Audio Source**). From the "Audio" folder drag "LaserSound" into the **Audio Clip** property in the "Laser" prefab **Inspector**.
+5. Lasers make sounds! Lets add a sound to this laser. Click on the laser in the "Prefabs" folder and add an **AudioSource** component (**Component > Audio > Audio Source**). From the "Audio" folder drag "LaserSound" into the **Audio Clip** property in the "Laser" prefab **Inspector**.
 
     If you run the game you can test the lasers out!
