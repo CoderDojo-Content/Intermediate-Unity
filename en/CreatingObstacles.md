@@ -70,6 +70,7 @@ The final step is attaching the asteroid prefab's **Rigidbody** to the "MoveAste
   The camera's viewport dimensions are 1 by 1 (the bottom left being (0,0) and the top right being (1,1)). 
   
   You then create a **Vector3** to return called `randomPosition`. and set the `randomPosition` to (our randomly generated x position, a y position that creates the asteroids above the screen, and the z position that is level with your player object).
-    
-    
-    Finally, change `Vector3 spawnPosition;` to ` Vector3 spawnPosition = getRandomPosition();`. 
+  
+  Finally, change `Vector3 spawnPosition;` to ` Vector3 spawnPosition = getRandomPosition();`.
+  
+7. Try the game out!
