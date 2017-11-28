@@ -1,4 +1,4 @@
-1. Create a folder in your Assets folder and name it "Scripts". Now create a new C# script in your new "Scripts folder" and name it "Player". Attach this code to your "Player" object.
+1. Create a folder in your Assets folder and name it "Scripts". Now create a new C# script in your new "Scripts folder". When you create a script you want to know what it does, so lets give it a descriptive name. You could use "PlayerController". Attach this code to your "Player" object.
 
 2. Add this code to the **Update()** function. 
     ```csharp

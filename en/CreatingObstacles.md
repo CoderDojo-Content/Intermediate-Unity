@@ -1,32 +1,21 @@
-1. Create a new C# script in the "Scripts" folder named "Asteroids" and Attach it to the "Asteroids" **GameObject** you created earlier.
+1. You'll use a few scripts for your asteroids, so to keep organized it's a good idea to make an "Asteroids" folder. Now, you will need 3 new C# scripts: CreateAsteroids, MoveAsteroid, and DestroyAsteroid.
 
-2. Add this code to you "Asteroids" script:
+2. Attach the "CreateAsteroids" script to  "CreateAsteroids" and add this code:
 
   ```csharp
   public GameObject asteroid;
-  public float asteroidSpeed = 2f;
    
   void Update()
   {
-    // Creating clones
-    Vector3 spawnPosition;
-    spawnPosition.x = 0;
-    spawnPosition.y = 0;
-    spawnPosition.z = 0;
+    Vector3 spawnPosition = Vector3.zero;
     GameObject asteroidClone = Instantiate(asteroid, spawnPosition, asteroid.transform.rotation) as GameObject;
-    // Move clones
-    Rigidbody asteroidCloneRB = asteroidClone.GetComponent<Rigidbody>();
-    asteroidCloneRB.velocity = -(transform.up * asteroidSpeed);
-    // Make sure clone is destroyed
-    Destroy(asteroidClone, 10f);
   }
   ```
-  
-  To understand what's happening here you need to know what **instantiate** means. **Instantiating** something is like building something from plans or instructions. If you're baking a cake, the cake is the **instance** and the recipe is the **Instantiate()** function. In the game world, your cake is instead a **GameObject**! However, when you instantiate an object you must **Destroy()** the **instance** when you're done with it. If you don't **destroy** an instance there will, eventually, be too many objects for you computer to keep track of, and it will slow down. The last line of this code destroys the instantiated object after 10 seconds. To make your asteroids move at a constant speed you change the **Rigidbody**'s **velocity** property, and you just need to add a Vector3 with a speed in a direction.
-  
-  Drag the Asteroid prefab form the "Prefabs" folder and drop it into the "asteroid" box for your "asteroids" script in the **Inspector** for your "Asteroids" object. Try running your game.
-  
-3. WOAH! That was a lot of asteroids being created! When you're repeatedly creating an asteroid, you want to be able to control how fast it appears. To do that you can use Unity's built in function `InvokeRepeating()`! Add this to your code above `Update()`.
+  To understand what's happening here you need to know what **instantiate** means. **Instantiating** something is like building something from plans or instructions. If you're baking a cake, the cake is the **instance** and the recipe is the **Instantiate()** function. In the game world, your cake is instead a **GameObject**!
+
+  Drag the Asteroid prefab form the "Prefabs" folder and drop it into the "asteroid" box for your "CreateAsteroids" script in the **Inspector** for your "Asteroids" object. Try running your game.
+
+3. WOAH! That was a lot of asteroids being created!The **Update()** function happens really fast so a lot of asteroids spawn. You can control how fast the asteroids are created with the `InvokeRepeating()` function. Add this to your previous code:
 
     ```csharp
     public float spawnTime = 1f;
@@ -41,7 +30,23 @@
     
     Now change `Update()` to `spawnAsteroid()` and put the "asteroid" prefab into the the script's "asteroid" slot in the "Asteroids" object **Inspector**.
     
-4. Now your asteroids spawn at a reasonable speed, but they only spawn in the same location. Lets make it more fun by spawning them at different locations every spawn. You can make a function that returns a random position to do this!
+    Try running the code now, it should create asteroids much slower.
+   
+4. If you create too many objects, your computer wont be able to keep track of them all. So when you create an asteroid you need to make sure it is destroyed. Lets use the **Destory()** function in the "DestoryAsteroids" script:
+
+ Attach the "DestroyAsteroids" to the Asteroid prefab. Add `Destroy(gameObject, 10f);` to the `Start()` function.
+ 
+ **gameObject** is the object the script is attached to. 10f destroys the asteroid after ten seconds.
+ 
+5. Lets make your asteroids move! You'll use the "MoveAsteroids" script.
+
+you change the **Rigidbody**'s **velocity** (the speed) property, and you just need to add a Vector3 with a speed in a direction.
+  
+  
+  
+
+    
+4. Lets make it more fun by creating them at different locations every spawn. You can make a function that returns a random position to do this!
   
     ```csharp
     Vector3 randomSpawn()
