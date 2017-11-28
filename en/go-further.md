@@ -10,6 +10,6 @@
     
     3. Try getting another asset from the resources listed on the front page. Try and create them like you did with the asteroids.
     
-    Hint: Go back to the first tutorial if you don't remember how to make a prefab!
+    Hint: You need to make your asset into a prefab first! Go back to the first tutorial if you don't remember how to make a prefab.
     
     4. Learn more about the programming language you have been using with Unity: C#. Here is a link to Microsoft's Beginner tutorial [dojo.soy/C#Tutorial](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169?l=Lvld4EQIC_2706218949).
